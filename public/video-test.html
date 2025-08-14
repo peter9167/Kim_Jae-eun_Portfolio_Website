@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Test</title>
+</head>
+<body>
+    <h1>Video Test Page</h1>
+    
+    <h2>Leadership Training Video</h2>
+    <video controls width="640" height="360" preload="metadata" crossorigin="anonymous">
+        <source src="/assets/Leadership/leadership-training-video.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'">
+        <source src="/assets/Leadership/leadership-training-video.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+    </video>
+    
+    <h2>Global Ensemble Video 01</h2>
+    <video controls width="640" height="360" preload="metadata" crossorigin="anonymous">
+        <source src="/assets/Global Ensemble/global-ensemble-video-01.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'">
+        <source src="/assets/Global Ensemble/global-ensemble-video-01.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+    </video>
+    
+    <h2>Global Ensemble Video 02</h2>
+    <video controls width="640" height="360" preload="metadata" crossorigin="anonymous">
+        <source src="/assets/Global Ensemble/global-ensemble-video-02.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'">
+        <source src="/assets/Global Ensemble/global-ensemble-video-02.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+    </video>
+    
+    <h2>Debug Information</h2>
+    <div id="debug"></div>
+    
+    <script>
+        const videos = document.querySelectorAll('video');
+        const debug = document.getElementById('debug');
+        
+        // Check browser video support
+        debug.innerHTML += '<h3>Browser Support</h3>';
+        const testVideo = document.createElement('video');
+        debug.innerHTML += `<p>MP4 Support: ${testVideo.canPlayType('video/mp4')}</p>`;
+        debug.innerHTML += `<p>MP4 with codecs: ${testVideo.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"')}</p>`;
+        debug.innerHTML += `<p>WebM Support: ${testVideo.canPlayType('video/webm')}</p>`;
+        
+        videos.forEach((video, index) => {
+            debug.innerHTML += `<h3>Video ${index + 1} Events</h3>`;
+            
+            video.addEventListener('loadstart', () => {
+                debug.innerHTML += `<p>Video ${index + 1}: ✅ loadstart event fired</p>`;
+            });
+            
+            video.addEventListener('loadedmetadata', () => {
+                debug.innerHTML += `<p>Video ${index + 1}: ✅ loadedmetadata event fired</p>`;
+                debug.innerHTML += `<p>Video ${index + 1}: Duration: ${video.duration} seconds</p>`;
+                debug.innerHTML += `<p>Video ${index + 1}: Dimensions: ${video.videoWidth} x ${video.videoHeight}</p>`;
+            });
+            
+            video.addEventListener('canplay', () => {
+                debug.innerHTML += `<p>Video ${index + 1}: ✅ canplay event fired</p>`;
+            });
+            
+            video.addEventListener('error', (e) => {
+                debug.innerHTML += `<p>Video ${index + 1}: ❌ Error event fired</p>`;
+                if (video.error) {
+                    debug.innerHTML += `<p>Video ${index + 1}: Error code: ${video.error.code}</p>`;
+                    debug.innerHTML += `<p>Video ${index + 1}: Error message: ${video.error.message || 'Unknown error'}</p>`;
+                }
+                
+                // Try to get more info about the source
+                const sources = video.querySelectorAll('source');
+                sources.forEach((source, sourceIndex) => {
+                    debug.innerHTML += `<p>Video ${index + 1}, Source ${sourceIndex + 1}: ${source.src}</p>`;
+                    debug.innerHTML += `<p>Video ${index + 1}, Source ${sourceIndex + 1}: Type: ${source.type}</p>`;
+                });
+            });
+            
+            video.addEventListener('abort', () => {
+                debug.innerHTML += `<p>Video ${index + 1}: ❌ abort event fired</p>`;
+            });
+            
+            video.addEventListener('stalled', () => {
+                debug.innerHTML += `<p>Video ${index + 1}: ⚠️ stalled event fired</p>`;
+            });
+            
+            video.addEventListener('suspend', () => {
+                debug.innerHTML += `<p>Video ${index + 1}: ⚠️ suspend event fired</p>`;
+            });
+        });
+    </script>
+</body>
+</html>

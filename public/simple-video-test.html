@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Video Test</title>
+</head>
+<body>
+    <h1>Simple Video Test</h1>
+    
+    <h2>Direct MP4 Test</h2>
+    <video controls width="320" height="240" preload="none">
+        <source src="/assets/Leadership/leadership-training-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <br><br>
+    
+    <h2>Test Links</h2>
+    <p><a href="/assets/Leadership/leadership-training-video.mp4" target="_blank">Direct link to video</a></p>
+    <p><a href="/assets/Global Ensemble/global-ensemble-video-01.mp4" target="_blank">Direct link to Global Ensemble video</a></p>
+    
+    <h2>Browser Info</h2>
+    <div id="info"></div>
+    
+    <script>
+        document.getElementById('info').innerHTML = `
+            <p>User Agent: ${navigator.userAgent}</p>
+            <p>Platform: ${navigator.platform}</p>
+        `;
+        
+        // Test video element capabilities
+        const video = document.querySelector('video');
+        video.addEventListener('error', function(e) {
+            console.error('Video error:', e);
+            console.error('Error details:', video.error);
+        });
+        
+        video.addEventListener('loadstart', function() {
+            console.log('Video load started');
+        });
+        
+        video.addEventListener('canplay', function() {
+            console.log('Video can play');
+        });
+    </script>
+</body>
+</html>

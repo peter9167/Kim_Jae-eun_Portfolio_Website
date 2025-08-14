@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { padding: 20px; }
+        .test-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .media-item { cursor: pointer; border: 2px solid #ddd; border-radius: 8px; overflow: hidden; }
+        .media-item:hover { border-color: #007bff; }
+        .media-item img, .media-item video { width: 100%; height: 150px; object-fit: cover; }
+        .media-overlay { padding: 10px; background: #f8f9fa; }
+        .status { margin: 20px 0; padding: 10px; background: #e9ecef; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Lightbox 기능 테스트</h1>
+    
+    <div class="status" id="status">
+        페이지 로딩 중... JavaScript 초기화를 기다리고 있습니다.
+    </div>
+    
+    <div class="test-gallery">
+        <div class="media-item" onclick="testClick('이미지 1')">
+            <img src="/assets/Leadership/leadership-training-01.jpg" alt="Leadership Training 1">
+            <div class="media-overlay">
+                <h3>Leadership Training 1</h3>
+                <p>클릭하여 라이트박스 테스트</p>
+            </div>
+        </div>
+        
+        <div class="media-item" onclick="testClick('이미지 2')">
+            <img src="/assets/Leadership/leadership-training-02.jpg" alt="Leadership Training 2">
+            <div class="media-overlay">
+                <h3>Leadership Training 2</h3>
+                <p>클릭하여 라이트박스 테스트</p>
+            </div>
+        </div>
+        
+        <div class="media-item" onclick="testClick('비디오')">
+            <video src="/assets/Leadership/leadership-training-video.mp4" muted>
+            </video>
+            <div class="media-overlay">
+                <h3>Leadership Video</h3>
+                <p>클릭하여 비디오 라이트박스 테스트</p>
+            </div>
+        </div>
+        
+        <div class="media-item" onclick="testClick('Global Ensemble 이미지')">
+            <img src="/assets/Global Ensemble/global-ensemble-01.jpg" alt="Global Ensemble">
+            <div class="media-overlay">
+                <h3>Global Ensemble</h3>
+                <p>클릭하여 라이트박스 테스트</p>
+            </div>
+        </div>
+    </div>
+    
+    <h2>수동 테스트</h2>
+    <button onclick="manualLightboxTest()">수동으로 라이트박스 열기</button>
+    <button onclick="checkPortfolioApp()">PortfolioApp 상태 확인</button>
+    
+    <script src="script.js"></script>
+    <script>
+        function testClick(item) {
+            const status = document.getElementById('status');
+            status.innerHTML = `${item} 클릭됨! 라이트박스가 열리면 성공입니다.`;
+            console.log(`${item} 클릭됨`);
+        }
+        
+        function manualLightboxTest() {
+            if (window.portfolioApp && window.portfolioApp()) {
+                const app = window.portfolioApp();
+                app.openLightbox('/assets/Leadership/leadership-training-01.jpg', 'Test Image', 'image');
+                document.getElementById('status').innerHTML = '수동 라이트박스 테스트 실행됨';
+            } else {
+                document.getElementById('status').innerHTML = 'PortfolioApp을 찾을 수 없습니다';
+            }
+        }
+        
+        function checkPortfolioApp() {
+            const status = document.getElementById('status');
+            if (window.portfolioApp) {
+                const app = window.portfolioApp();
+                status.innerHTML = `PortfolioApp 상태: ${app ? '활성화됨' : '비활성화됨'}`;
+                console.log('PortfolioApp:', app);
+            } else {
+                status.innerHTML = 'PortfolioApp 함수가 정의되지 않았습니다';
+            }
+        }
+        
+        // 페이지 로드 후 상태 확인
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                checkPortfolioApp();
+            }, 2000);
+        });
+        
+        // 클릭 이벤트 감지
+        document.addEventListener('click', (e) => {
+            console.log('클릭 감지:', e.target);
+            if (e.target.closest('.media-item')) {
+                console.log('미디어 아이템 클릭됨');
+            }
+        });
+    </script>
+</body>
+</html>

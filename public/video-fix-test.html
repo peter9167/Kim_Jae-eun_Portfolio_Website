@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Fix Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .video-container { margin: 20px 0; border: 1px solid #ddd; padding: 10px; }
+        video { width: 100%; max-width: 500px; }
+        .fallback { background: #f0f0f0; padding: 20px; text-align: center; color: #666; }
+        .status { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .loading { background: #cce5ff; color: #004085; }
+    </style>
+</head>
+<body>
+    <h1>Video Compatibility Fix</h1>
+    
+    <div class="video-container">
+        <h3>GEM Activity Video 02 (문제 비디오)</h3>
+        <video id="gem-video" controls preload="none" poster="">
+            <source src="/assets/GEM/gem-activity-video-02.mp4" type="video/mp4">
+            <div class="fallback">
+                <p>비디오를 재생할 수 없습니다.</p>
+                <p><a href="/assets/GEM/gem-activity-video-02.mp4" target="_blank">비디오 직접 다운로드</a></p>
+            </div>
+        </video>
+        <div id="gem-status" class="status loading">로딩 중...</div>
+        <button onclick="loadGemVideo()">수동 로드</button>
+        <button onclick="downloadGemVideo()">다운로드</button>
+    </div>
+    
+    <div class="video-container">
+        <h3>Sports Activity Video 01 (문제 비디오)</h3>
+        <video id="sports-video" controls preload="none" poster="">
+            <source src="/assets/Sports/sports-activity-video-01.mp4" type="video/mp4">
+            <div class="fallback">
+                <p>비디오를 재생할 수 없습니다.</p>
+                <p><a href="/assets/Sports/sports-activity-video-01.mp4" target="_blank">비디오 직접 다운로드</a></p>
+            </div>
+        </video>
+        <div id="sports-status" class="status loading">로딩 중...</div>
+        <button onclick="loadSportsVideo()">수동 로드</button>
+        <button onclick="downloadSportsVideo()">다운로드</button>
+    </div>
+    
+    <div class="video-container">
+        <h3>Global Ensemble Video 01 (참고용 - 작동하는 비디오)</h3>
+        <video id="global-video" controls preload="metadata">
+            <source src="/assets/Global Ensemble/global-ensemble-video-01.mp4" type="video/mp4">
+        </video>
+        <div id="global-status" class="status loading">로딩 중...</div>
+    </div>
+    
+    <h2>진단 정보</h2>
+    <div id="diagnosis"></div>
+    
+    <script>
+        function updateStatus(id, message, type) {
+            const status = document.getElementById(id);
+            status.textContent = message;
+            status.className = `status ${type}`;
+        }
+        
+        function setupVideo(videoId, statusId, name) {
+            const video = document.getElementById(videoId);
+            
+            video.addEventListener('loadstart', () => {
+                updateStatus(statusId, `${name}: 로드 시작`, 'loading');
+            });
+            
+            video.addEventListener('loadedmetadata', () => {
+                updateStatus(statusId, `${name}: ✅ 메타데이터 로드 성공 (${video.duration.toFixed(1)}초)`, 'success');
+            });
+            
+            video.addEventListener('canplay', () => {
+                console.log(`${name}: 재생 가능`);
+            });
+            
+            video.addEventListener('error', (e) => {
+                let errorMsg = `${name}: ❌ 오류 발생`;
+                if (video.error) {
+                    errorMsg += ` (코드: ${video.error.code})`;
+                }
+                updateStatus(statusId, errorMsg, 'error');
+                
+                // Show fallback
+                video.style.display = 'none';
+                const fallback = video.querySelector('.fallback');
+                if (fallback) {
+                    fallback.style.display = 'block';
+                }
+            });
+            
+            video.addEventListener('abort', () => {
+                updateStatus(statusId, `${name}: 로드 중단`, 'error');
+            });
+        }
+        
+        function loadGemVideo() {
+            const video = document.getElementById('gem-video');
+            video.load();
+            updateStatus('gem-status', 'GEM 비디오: 수동 로드 시도 중...', 'loading');
+        }
+        
+        function loadSportsVideo() {
+            const video = document.getElementById('sports-video');
+            video.load();
+            updateStatus('sports-status', 'Sports 비디오: 수동 로드 시도 중...', 'loading');
+        }
+        
+        function downloadGemVideo() {
+            window.open('/assets/GEM/gem-activity-video-02.mp4', '_blank');
+        }
+        
+        function downloadSportsVideo() {
+            window.open('/assets/Sports/sports-activity-video-01.mp4', '_blank');
+        }
+        
+        // Setup all videos
+        setupVideo('gem-video', 'gem-status', 'GEM 비디오');
+        setupVideo('sports-video', 'sports-status', 'Sports 비디오');
+        setupVideo('global-video', 'global-status', 'Global 비디오');
+        
+        // Browser diagnosis
+        const diagnosis = document.getElementById('diagnosis');
+        const testVideo = document.createElement('video');
+        
+        diagnosis.innerHTML = `
+            <h3>브라우저 지원 정보</h3>
+            <p><strong>사용자 에이전트:</strong> ${navigator.userAgent}</p>
+            <p><strong>MP4 지원:</strong> ${testVideo.canPlayType('video/mp4')}</p>
+            <p><strong>MP4 + 코덱:</strong> ${testVideo.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"')}</p>
+            <p><strong>WebM 지원:</strong> ${testVideo.canPlayType('video/webm')}</p>
+            <p><strong>현재 시간:</strong> ${new Date().toLocaleString()}</p>
+        `;
+    </script>
+</body>
+</html>

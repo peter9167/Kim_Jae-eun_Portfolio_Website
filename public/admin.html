@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Admin - 관리자 페이지</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== LOGIN SECTION ==================== -->
+    <div id="login-section" class="login-container">
+        <div class="login-box">
+            <h1 class="login-title">Portfolio Admin</h1>
+            <p class="login-subtitle">관리자 로그인</p>
+            
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="username">아이디</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="login-btn">로그인</button>
+                
+                <div id="login-error" class="error-message" style="display: none;">
+                    아이디 또는 비밀번호가 올바르지 않습니다.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== ADMIN DASHBOARD ==================== -->
+    <div id="admin-dashboard" class="admin-container" style="display: none;">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-content">
+                <h1 class="admin-title">Portfolio 관리자</h1>
+                <div class="admin-actions">
+                    <span class="admin-user">관리자님 환영합니다</span>
+                    <button id="logout-btn" class="logout-btn">로그아웃</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <div class="admin-content">
+                <!-- Upload Section -->
+                <section class="upload-section">
+                    <h2 class="section-title">이미지/영상 업로드</h2>
+                    
+                    <!-- File Size Limits Info -->
+                    <div class="file-limits">
+                        <h4>📁 파일 크기 제한</h4>
+                        <ul>
+                            <li><strong>이미지:</strong> 최대 3MB (jpg, jpeg, png, webp)</li>
+                            <li><strong>영상:</strong> 최대 50MB (mp4, webm, mov)</li>
+                            <li><strong>해상도 권장:</strong> 이미지 1920x1080, 영상 3분 이내</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="upload-form-container">
+                        <form id="upload-form" class="upload-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="section-select">섹션 선택</label>
+                                    <select id="section-select" name="section" required>
+                                        <option value="">섹션을 선택하세요</option>
+                                        <option value="leadership">Leadership</option>
+                                        <option value="global-ensemble">Global Ensemble</option>
+                                        <option value="refugee">Refugee Support</option>
+                                        <option value="gem">GEM Program</option>
+                                        <option value="fos">FOS Initiative</option>
+                                        <option value="rcy">RCY Activities</option>
+                                        <option value="jeju-galot">Jeju Galot</option>
+                                        <option value="hyanggyo">Hyanggyo</option>
+                                        <option value="sports">Sports</option>
+                                        <option value="sign-language">Sign Language</option>
+                                        <option value="awards">Awards</option>
+                                        <option value="news">News</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="media-type">미디어 타입</label>
+                                    <select id="media-type" name="mediaType" required>
+                                        <option value="">타입을 선택하세요</option>
+                                        <option value="image">이미지</option>
+                                        <option value="video">영상</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="media-title">제목</label>
+                                    <input type="text" id="media-title" name="title" required placeholder="미디어 제목을 입력하세요">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="media-description">설명</label>
+                                    <input type="text" id="media-description" name="description" required placeholder="미디어 설명을 입력하세요">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="file-input">파일 선택</label>
+                                <div class="file-input-container">
+                                    <input type="file" id="file-input" name="file" accept="image/*,video/*" required>
+                                    <div class="file-preview" id="file-preview" style="display: none;">
+                                        <img id="preview-image" style="display: none;" alt="Preview">
+                                        <video id="preview-video" style="display: none;" controls></video>
+                                        <p id="preview-filename"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="upload-btn">업로드</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Media Management Section -->
+                <section class="management-section">
+                    <h2 class="section-title">미디어 관리</h2>
+                    
+                    <div class="filter-controls">
+                        <select id="filter-section" class="filter-select">
+                            <option value="">모든 섹션</option>
+                            <option value="leadership">Leadership</option>
+                            <option value="global-ensemble">Global Ensemble</option>
+                            <option value="refugee">Refugee Support</option>
+                            <option value="gem">GEM Program</option>
+                            <option value="fos">FOS Initiative</option>
+                            <option value="rcy">RCY Activities</option>
+                            <option value="jeju-galot">Jeju Galot</option>
+                            <option value="hyanggyo">Hyanggyo</option>
+                            <option value="sports">Sports</option>
+                            <option value="sign-language">Sign Language</option>
+                            <option value="awards">Awards</option>
+                            <option value="news">News</option>
+                        </select>
+                        
+                        <button id="refresh-media" class="refresh-btn">새로고침</button>
+                    </div>
+                    
+                    <div id="media-grid" class="media-grid">
+                        <!-- Media items will be dynamically loaded here -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div id="message-container" class="message-container"></div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

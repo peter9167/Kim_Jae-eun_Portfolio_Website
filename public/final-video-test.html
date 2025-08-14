@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Video Test - Simple Setup</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        video { margin: 10px 0; display: block; }
+        .result { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+    </style>
+</head>
+<body>
+    <h1>Final Video Test - Simplified Setup</h1>
+    <p>Testing videos with the original simple static file serving approach.</p>
+    
+    <h2>Problem Videos</h2>
+    
+    <h3>1. Sports Activity Video</h3>
+    <video controls width="400" height="300" preload="metadata">
+        <source src="/assets/Sports/sports-activity-video-01.mp4" type="video/mp4">
+    </video>
+    <div id="sports-result" class="result">Loading...</div>
+    
+    <h3>2. GEM Activity Video</h3>
+    <video controls width="400" height="300" preload="metadata">
+        <source src="/assets/GEM/gem-activity-video-02.mp4" type="video/mp4">
+    </video>
+    <div id="gem-result" class="result">Loading...</div>
+    
+    <h3>3. Global Ensemble Video (working reference)</h3>
+    <video controls width="400" height="300" preload="metadata">
+        <source src="/assets/Global Ensemble/global-ensemble-video-01.mp4" type="video/mp4">
+    </video>
+    <div id="global-result" class="result">Loading...</div>
+    
+    <h2>Direct Download Links</h2>
+    <ul>
+        <li><a href="/assets/Sports/sports-activity-video-01.mp4" target="_blank">Sports Video</a> (3.3MB)</li>
+        <li><a href="/assets/GEM/gem-activity-video-02.mp4" target="_blank">GEM Video</a> (15.3MB)</li>
+        <li><a href="/assets/Global Ensemble/global-ensemble-video-01.mp4" target="_blank">Global Ensemble Video</a> (4.5MB)</li>
+    </ul>
+    
+    <script>
+        const videos = document.querySelectorAll('video');
+        const results = ['sports-result', 'gem-result', 'global-result'];
+        
+        videos.forEach((video, index) => {
+            const resultDiv = document.getElementById(results[index]);
+            
+            video.addEventListener('loadedmetadata', () => {
+                resultDiv.innerHTML = `✅ SUCCESS: Loaded ${video.duration.toFixed(1)}s video (${video.videoWidth}x${video.videoHeight})`;
+                resultDiv.className = 'result success';
+            });
+            
+            video.addEventListener('error', () => {
+                let errorText = '❌ ERROR: ';
+                if (video.error) {
+                    switch(video.error.code) {
+                        case 1: errorText += 'MEDIA_ERR_ABORTED'; break;
+                        case 2: errorText += 'MEDIA_ERR_NETWORK'; break;
+                        case 3: errorText += 'MEDIA_ERR_DECODE'; break;
+                        case 4: errorText += 'MEDIA_ERR_SRC_NOT_SUPPORTED'; break;
+                        default: errorText += `Unknown error (${video.error.code})`;
+                    }
+                }
+                resultDiv.innerHTML = errorText;
+                resultDiv.className = 'result error';
+            });
+            
+            video.addEventListener('canplay', () => {
+                console.log(`Video ${index + 1} can play`);
+            });
+        });
+    </script>
+</body>
+</html>

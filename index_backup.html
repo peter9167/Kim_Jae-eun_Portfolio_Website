@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Journey of Impact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        /* ==================== RESET & BASE STYLES ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            background: white;
+            min-height: 100vh;
+            padding-top: 120px; /* Space for fixed header */
+        }
+
+        /* ==================== HEADER STYLES ==================== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        /* ==================== NAVIGATION STYLES ==================== */
+        nav {
+            background: #34495e;
+            padding: 0;
+            border-top: 1px solid #2c3e50;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .nav-item {
+            position: relative;
+            flex: 0 1 auto;
+        }
+
+        .nav-item:nth-child(1) { flex-basis: 8%; }
+        .nav-item:nth-child(2) { flex-basis: 12%; }
+        .nav-item:nth-child(3) { flex-basis: 15%; }
+        .nav-item:nth-child(4) { flex-basis: 18%; }
+        .nav-item:nth-child(5) { flex-basis: 16%; }
+        .nav-item:nth-child(6) { flex-basis: 17%; }
+        .nav-item:nth-child(7) { flex-basis: 8%; }
+        .nav-item:nth-child(8) { flex-basis: 15%; }
+        .nav-item:nth-child(9) { flex-basis: 9%; }
+        .nav-item:nth-child(10) { flex-basis: 12%; }
+
+        .nav-btn {
+            background: #34495e;
+            color: white;
+            border: none;
+            padding: 0.8rem 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            border-right: 1px solid #2c3e50;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background: #3498db;
+            transform: translateY(-2px);
+        }
+
+        .nav-btn:last-child {
+            border-right: none;
+        }
+
+        .dropdown-arrow {
+            font-size: 0.7rem;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-item:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #2c3e50;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid #34495e;
+        }
+
+        .dropdown-item:hover {
+            background: #3498db;
+            padding-left: 2rem;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        /* ==================== CONTENT STYLES ==================== */
+        .content {
+            padding: 3rem 4rem;
+            width: 100%;
+            max-width: none;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .section-description {
+            font-size: 1.3rem;
+            color: #666;
+            line-height: 1.8;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* ==================== GALLERY STYLES ==================== */
+        .photo-gallery {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            background: white;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(45deg, #e8e8e8, #f0f0f0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: 300;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .gallery-caption {
+            padding: 1.5rem;
+            background: white;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .gallery-caption h3 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .gallery-caption p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Featured gallery item for first image */
+        .gallery-item.featured {
+            grid-column: span 2;
+            height: 450px;
+        }
+
+        .gallery-item.featured .gallery-image {
+            height: 300px;
+            font-size: 1.3rem;
+        }
+
+        .gallery-item.featured .gallery-caption h3 {
+            font-size: 1.6rem;
+        }
+
+        .gallery-item.featured .gallery-caption p {
+            font-size: 1.1rem;
+        }
+
+        /* ==================== ACTIVITY CARD STYLES ==================== */
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .activity-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-left: 6px solid #3498db;
+            transition: all 0.3s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+
+        .activity-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .activity-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .activity-details {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* ==================== AWARD STYLES ==================== */
+        .award-item {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .award-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .award-title {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .award-org {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .award-item p:last-child {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* ==================== NEWS STYLES ==================== */
+        .news-item {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 6px solid #e74c3c;
+            transition: all 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .news-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .news-source {
+            color: #e74c3c;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .news-item p:last-child {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* ==================== INTRO SECTION STYLES ==================== */
+        .intro-section {
+            text-align: center;
+            padding: 6rem 4rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: -3rem -4rem 4rem -4rem;
+        }
+
+        .intro-title {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .intro-subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* ==================== RESPONSIVE STYLES ==================== */
+        @media (max-width: 1200px) {
+            .content {
+                padding: 3rem 2rem;
+            }
+            
+            .intro-section {
+                margin: -3rem -2rem 4rem -2rem;
+                padding: 5rem 2rem;
+            }
+
+            .nav-btn {
+                font-size: 0.8rem;
+                padding: 0.8rem 0.8rem;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .nav-item:nth-child(1) { flex-basis: 10%; }
+            .nav-item:nth-child(2) { flex-basis: 15%; }
+            .nav-item:nth-child(3) { flex-basis: 18%; }
+            .nav-item:nth-child(4) { flex-basis: 22%; }
+            .nav-item:nth-child(5) { flex-basis: 20%; }
+            .nav-item:nth-child(6) { flex-basis: 20%; order: 6; }
+            .nav-item:nth-child(7) { flex-basis: 10%; order: 7; }
+            .nav-item:nth-child(8) { flex-basis: 18%; order: 8; }
+            .nav-item:nth-child(9) { flex-basis: 12%; order: 9; }
+            .nav-item:nth-child(10) { flex-basis: 15%; order: 10; }
+        }
+
+        @media (max-width: 900px) {
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            .nav-item {
+                flex-basis: 50% !important;
+                border-bottom: 1px solid #2c3e50;
+            }
+
+            .nav-btn {
+                font-size: 0.8rem;
+                padding: 1rem 0.8rem;
+                border-right: none;
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-top: 140px;
+            }
+
+            .nav-container {
+                flex-direction: column;
+            }
+            
+            .nav-item {
+                flex: none;
+                min-width: 100%;
+                max-width: 100%;
+            }
+            
+            .nav-btn {
+                border-right: none;
+                border-bottom: 1px solid #2c3e50;
+                justify-content: space-between;
+                padding: 1.2rem 2rem;
+                font-size: 0.9rem;
+            }
+            
+            .nav-btn:last-child {
+                border-bottom: none;
+            }
+
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                display: none;
+                background: #1a252f;
+            }
+
+            .nav-item:hover .dropdown-menu {
+                display: block;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .intro-title {
+                font-size: 2.5rem;
+            }
+            
+            .content {
+                padding: 2rem 1rem;
+            }
+
+            .intro-section {
+                padding: 4rem 1rem;
+                margin: -2rem -1rem 3rem -1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+
+            .gallery-item {
+                height: 350px;
+            }
+
+            .gallery-item.featured {
+                grid-column: span 1;
+                height: 350px;
+            }
+
+            .gallery-image {
+                height: 200px;
+                font-size: 1rem;
+            }
+
+            .gallery-item.featured .gallery-image {
+                height: 200px;
+            }
+
+            .gallery-caption {
+                padding: 1rem;
+            }
+
+            .gallery-caption h3 {
+                font-size: 1.1rem;
+            }
+
+            .gallery-caption p {
+                font-size: 0.9rem;
+            }
+
+            .activity-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .activity-card {
+                padding: 2rem;
+            }
+
+            .award-item, .news-item {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-item {
+                min-width: 100%;
+                max-width: 100%;
+            }
+
+            .nav-btn {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding-top: 160px;
+            }
+
+            .nav-btn {
+                font-size: 0.85rem;
+                padding: 1rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .intro-title {
+                font-size: 2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .gallery-item {
+                height: 320px;
+            }
+
+            .gallery-item.featured {
+                grid-column: span 1;
+                height: 320px;
+            }
+
+            .gallery-image {
+                height: 180px;
+                font-size: 0.9rem;
+            }
+
+            .gallery-item.featured .gallery-image {
+                height: 180px;
+            }
+    <div class="container">
+    <div class="container">
+        <!-- ==================== HEADER SECTION ==================== -->
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-item">
+                        <button class="nav-btn active" onclick="showTab('home')">Home</button>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn" onclick="showTab('leadership')">
+                            Leadership
+                        </button>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn" onclick="showTab('global-ensemble')">
+                            Global Ensemble
+                        </button>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn" onclick="showTab('refugee')">
+                            Refugee Organization
+                        </button>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn">
+                            Campus Volunteering <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item" onclick="showTab('gem')">Gem</button>
+                            <button class="dropdown-item" onclick="showTab('fos')">Fos</button>
+                            <button class="dropdown-item" onclick="showTab('rcy')">Rcy</button>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn">
+                            Off-Campus Volunteering <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item" onclick="showTab('blue-scan')">Blue Scan</button>
+                            <button class="dropdown-item" onclick="showTab('co-farm-jeju')">Co Farm Jeju</button>
+                            <button class="dropdown-item" onclick="showTab('jeju-galot')">Jeju Galot Ambassador</button>
+                            <button class="dropdown-item" onclick="showTab('hyanggyo')">Hyanggyo</button>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn" onclick="showTab('sports')">
+                            Sports
+                        </button>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn">
+                            Extra Volunteering <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item" onclick="showTab('sign-language')">Sign Language</button>
+                            <button class="dropdown-item" onclick="showTab('spanish')">Spanish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn" onclick="showTab('awards')">Awards</button>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <button class="nav-btn" onclick="showTab('news')">News Stories</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <!-- ==================== HOME PAGE ==================== -->
+            <div id="home" class="tab-content active">
+                <div class="intro-section">
+                    <h1 class="intro-title">Hello</h1>
+                    <p class="intro-subtitle">Explore my experiences in leadership, community service, global engagement, and personal growth through various activities and achievements that have shaped my commitment to making a positive impact in the world.</p>
+                </div>
+                
+                <div class="section-header">
+                    <h2 class="section-title">About This Portfolio</h2>
+                    <p class="section-description">This portfolio showcases my diverse experiences across leadership roles, volunteer work, international programs, sports, and community engagement. Each section represents a meaningful part of my journey toward creating positive change and building stronger communities through service, collaboration, and dedication.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Leadership Development Journey</div>
+                            <div class="gallery-caption">
+                                <h3>Leadership Excellence</h3>
+                                <p>Building skills to guide teams and create positive organizational change</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Community Service Impact</div>
+                            <div class="gallery-caption">
+                                <h3>Community Engagement</h3>
+                                <p>Volunteering and service activities that strengthen local communities</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Global Cultural Exchange</div>
+                            <div class="gallery-caption">
+                                <h3>International Perspective</h3>
+                                <p>Cross-cultural experiences that broaden worldview and understanding</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Athletic Achievement</div>
+                            <div class="gallery-caption">
+                                <h3>Sports Excellence</h3>
+                                <p>Hockey training and competitive achievements building character</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== LEADERSHIP PAGE ==================== -->
+            <div id="leadership" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Leadership Development</h2>
+                    <p class="section-description">My comprehensive journey in developing leadership capabilities through diverse roles, challenging initiatives, and transformative experiences that have shaped my ability to guide teams, inspire change, and create meaningful impact in various organizational and community settings.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Leadership Workshop Excellence</div>
+                            <div class="gallery-caption">
+                                <h3>Professional Development</h3>
+                                <p>Intensive leadership training programs and skill-building workshops</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Team Building Success</div>
+                            <div class="gallery-caption">
+                                <h3>Team Management</h3>
+                                <p>Leading diverse teams through complex projects and challenges</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Strategic Planning Session</div>
+                            <div class="gallery-caption">
+                                <h3>Strategic Vision</h3>
+                                <p>Developing long-term strategies and organizational goals</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Mentorship Program</div>
+                            <div class="gallery-caption">
+                                <h3>Leadership Mentoring</h3>
+                                <p>Guiding and developing the next generation of leaders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <h3 class="activity-title">Student Leadership Excellence</h3>
+                        <p class="activity-description">Held multiple leadership positions in student organizations, developing comprehensive skills in team management, project coordination, strategic planning, and organizational development while creating positive change in campus communities.</p>
+                        <div class="activity-details">
+                            <strong>Core Competencies:</strong> Team leadership, strategic planning, effective communication, conflict resolution, project management, organizational development, and change management
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <h3 class="activity-title">Community Leadership Impact</h3>
+                        <p class="activity-description">Led transformative community initiatives and programs, working collaboratively with diverse stakeholder groups to achieve ambitious goals and create sustainable positive social impact through innovative approaches and dedicated execution.</p>
+                        <div class="activity-details">
+                            <strong>Achievements:</strong> Organized multiple large-scale community events, successfully coordinated volunteer teams of 50+ members, significantly improved local community engagement and participation rates
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== GEM PAGE ==================== -->
+            <div id="gem" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Gem Program Excellence</h2>
+                    <p class="section-description">Comprehensive involvement in the Gem program focusing on community-building activities, peer support systems, and student development initiatives designed to enhance campus culture, foster meaningful connections, and create an inclusive environment where all students can thrive and succeed.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Gem Program Orientation</div>
+                            <div class="gallery-caption">
+                                <h3>Program Foundation</h3>
+                                <p>Comprehensive introduction to Gem community values and mission</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Peer Mentoring Excellence</div>
+                            <div class="gallery-caption">
+                                <h3>Student Support Systems</h3>
+                                <p>Providing guidance and mentorship to fellow students</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Community Building Events</div>
+                            <div class="gallery-caption">
+                                <h3>Campus Unity</h3>
+                                <p>Organizing inclusive events that bring the campus community together</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Leadership Development</div>
+                            <div class="gallery-caption">
+                                <h3>Student Leadership</h3>
+                                <p>Developing leadership skills through hands-on experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Comprehensive Community Building</h3>
+                    <p class="activity-description">Active leadership in Gem program initiatives including peer mentoring systems, community engagement events, student orientation assistance, and campus culture enhancement projects. Contributed to creating a welcoming, inclusive environment that supports student success and personal development through collaborative programming and dedicated service.</p>
+                    <div class="activity-details">
+                        <strong>Key Contributions:</strong> Facilitated peer mentoring sessions for new students, coordinated large-scale community outreach programs, assisted with student orientation and transition programs, developed campus culture enhancement initiatives, and created sustainable support systems for ongoing student success
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== FOS PAGE ==================== -->
+            <div id="fos" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Fos Sustainability Initiative</h2>
+                    <p class="section-description">Leadership role in comprehensive campus sustainability and improvement projects focused on environmental consciousness, facility enhancement, and creating a more sustainable campus environment for current students and future generations through innovative green initiatives and community engagement.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Environmental Conservation Project</div>
+                            <div class="gallery-caption">
+                                <h3>Green Campus Initiative</h3>
+                                <p>Implementing comprehensive sustainability projects across campus</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Campus Beautification Effort</div>
+                            <div class="gallery-caption">
+                                <h3>Facility Enhancement</h3>
+                                <p>Improving campus aesthetics and functional spaces</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Green Team Collaboration</div>
+                            <div class="gallery-caption">
+                                <h3>Environmental Leadership</h3>
+                                <p>Leading teams in environmental awareness and action initiatives</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Sustainability Workshop</div>
+                            <div class="gallery-caption">
+                                <h3>Educational Outreach</h3>
+                                <p>Teaching sustainable practices to the campus community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Environmental Sustainability Leadership</h3>
+                    <p class="activity-description">Spearheaded comprehensive campus sustainability initiatives including innovative waste reduction programs, energy conservation projects, and environmental awareness campaigns. Led cross-functional teams in implementing green infrastructure improvements and developing sustainable practices that have created lasting positive environmental impact.</p>
+                    <div class="activity-details">
+                        <strong>Impact Areas:</strong> Waste reduction and recycling program expansion, energy conservation infrastructure improvements, environmental education and awareness campaigns, campus beautification and green space development, sustainable transportation initiatives, and community engagement in environmental stewardship
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== RCY PAGE ==================== -->
+            <div id="rcy" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Rcy Student Welfare Activities</h2>
+                    <p class="section-description">Comprehensive involvement in student welfare and recreational programs designed to promote holistic well-being, community spirit, and healthy lifestyle choices among the student body through diverse activities, support systems, and wellness initiatives that address physical, mental, and social health needs.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Student Wellness Programs</div>
+                            <div class="gallery-caption">
+                                <h3>Holistic Health Focus</h3>
+                                <p>Comprehensive programs promoting mental and physical well-being</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Recreation Event Coordination</div>
+                            <div class="gallery-caption">
+                                <h3>Community Activities</h3>
+                                <p>Organizing engaging and inclusive campus recreational events</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Peer Support Networks</div>
+                            <div class="gallery-caption">
+                                <h3>Support Systems</h3>
+                                <p>Building strong peer support networks and community connections</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Wellness Workshop</div>
+                            <div class="gallery-caption">
+                                <h3>Educational Programming</h3>
+                                <p>Facilitating workshops on stress management and healthy living</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Comprehensive Student Welfare Programming</h3>
+                    <p class="activity-description">Coordinated and implemented comprehensive recreational activities, wellness programs, and support systems designed to enhance student life and promote overall well-being on campus. Developed innovative approaches to address student mental health, social connection, and personal development needs through evidence-based programming and peer support initiatives.</p>
+                    <div class="activity-details">
+                        <strong>Program Portfolio:</strong> Mental health support and counseling resources, recreational sports and fitness programs, social events and community building activities, peer counseling and support groups, stress management and wellness workshops, crisis support and intervention services, and healthy lifestyle education initiatives
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== BLUE SCAN PAGE ==================== -->
+            <div id="blue-scan" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Blue Scan Marine Conservation</h2>
+                    <p class="section-description">Comprehensive environmental monitoring and conservation project focused on marine and coastal ecosystem protection, scientific data collection, and promoting awareness about ocean health and sustainability. Contributing to vital research that informs conservation strategies and environmental policy decisions.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Marine Research Excellence</div>
+                            <div class="gallery-caption">
+                                <h3>Ocean Health Monitoring</h3>
+                                <p>Collecting critical data on marine ecosystem health and biodiversity</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Coastal Conservation Action</div>
+                            <div class="gallery-caption">
+                                <h3>Environmental Protection</h3>
+                                <p>Direct action initiatives protecting coastal environments</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Scientific Data Collection</div>
+                            <div class="gallery-caption">
+                                <h3>Research Contribution</h3>
+                                <p>Contributing to important environmental research and conservation science</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Community Education</div>
+                            <div class="gallery-caption">
+                                <h3>Environmental Awareness</h3>
+                                <p>Educating communities about marine conservation and sustainability</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Marine Conservation Research Project</h3>
+                    <p class="activity-description">Participated in comprehensive marine ecosystem monitoring, conducting detailed research on ocean health indicators, and implementing conservation measures to protect critical coastal environments. Contributed to scientific understanding of marine biodiversity and ecosystem health through systematic data collection and analysis.</p>
+                    <div class="activity-details">
+                        <strong>Research Activities:</strong> Water quality testing and analysis, marine life documentation and biodiversity surveys, coastal cleanup and habitat restoration, environmental data analysis and reporting, conservation advocacy and policy recommendations, community education and outreach programs
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== CO FARM JEJU PAGE ==================== -->
+            <div id="co-farm-jeju" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Co Farm Jeju Sustainable Agriculture</h2>
+                    <p class="section-description">Collaborative farming initiative on beautiful Jeju Island promoting sustainable agriculture practices, community cooperation, and environmental stewardship through hands-on farming experience, education, and commitment to responsible food production that supports both local communities and environmental health.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Sustainable Farming Practices</div>
+                            <div class="gallery-caption">
+                                <h3>Organic Agriculture Excellence</h3>
+                                <p>Learning and implementing cutting-edge sustainable farming techniques</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Community Collaboration</div>
+                            <div class="gallery-caption">
+                                <h3>Cooperative Farming</h3>
+                                <p>Working collaboratively with local farmers and community members</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Harvest Season Success</div>
+                            <div class="gallery-caption">
+                                <h3>Agricultural Achievement</h3>
+                                <p>Celebrating successful harvests and community agricultural achievements</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Educational Workshops</div>
+                            <div class="gallery-caption">
+                                <h3>Knowledge Sharing</h3>
+                                <p>Teaching and learning sustainable agriculture practices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Sustainable Agriculture Initiative</h3>
+                    <p class="activity-description">Engaged in collaborative farming on Jeju Island, learning and implementing sustainable agricultural practices while contributing to community food security and environmental conservation. Developed deep understanding of organic farming methods, community cooperation, and the connection between sustainable agriculture and environmental stewardship.</p>
+                    <div class="activity-details">
+                        <strong>Skills and Knowledge Gained:</strong> Organic farming techniques and soil management, community cooperation and collaborative work methods, environmental stewardship and conservation practices, agricultural sustainability and crop rotation methods, rural community engagement and cultural exchange, food security and local food systems development
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== JEJU GALOT PAGE ==================== -->
+            <div id="jeju-galot" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Jeju Galot Cultural Ambassador</h2>
+                    <p class="section-description">Distinguished cultural ambassador role promoting Jeju's traditional galot (traditional clothing) and rich cultural heritage, supporting local tourism development and cultural preservation initiatives while fostering appreciation for traditional Korean culture and contributing to sustainable cultural tourism on Jeju Island.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Traditional Galot Heritage</div>
+                            <div class="gallery-caption">
+                                <h3>Cultural Preservation</h3>
+                                <p>Showcasing and preserving traditional Jeju clothing and customs</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Cultural Festival Participation</div>
+                            <div class="gallery-caption">
+                                <h3>Community Engagement</h3>
+                                <p>Active participation in cultural festivals and heritage events</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Tourism Promotion</div>
+                            <div class="gallery-caption">
+                                <h3>Cultural Tourism</h3>
+                                <p>Supporting Jeju tourism through authentic cultural experiences</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Educational Outreach</div>
+                            <div class="gallery-caption">
+                                <h3>Cultural Education</h3>
+                                <p>Teaching traditional culture to diverse audiences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Cultural Heritage Ambassador Excellence</h3>
+                    <p class="activity-description">Served as dedicated ambassador for Jeju's traditional galot, promoting cultural awareness and appreciation while supporting local artisans and contributing to sustainable cultural tourism development. Engaged in comprehensive cultural education, heritage preservation, and community outreach initiatives that bridge traditional culture with contemporary audiences.</p>
+                    <div class="activity-details">
+                        <strong>Ambassador Responsibilities:</strong> Cultural education and awareness programs, tourism promotion and visitor engagement, heritage preservation and documentation, community outreach and cultural exchange, traditional craft and artisan support, authentic cultural experience development
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== HYANGGYO PAGE ==================== -->
+            <div id="hyanggyo" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Hyanggyo Traditional Education</h2>
+                    <p class="section-description">Meaningful participation in traditional Korean educational institution activities, focusing on cultural preservation, traditional education methodologies, and community heritage programs that connect historical wisdom with contemporary learning while honoring the rich educational traditions of Korean culture.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Traditional Korean Ceremony</div>
+                            <div class="gallery-caption">
+                                <h3>Cultural Rituals</h3>
+                                <p>Participating in meaningful traditional Korean ceremonies and rituals</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Heritage Educational Programs</div>
+                            <div class="gallery-caption">
+                                <h3>Traditional Learning</h3>
+                                <p>Learning and sharing traditional knowledge and educational practices</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Community Heritage Outreach</div>
+                            <div class="gallery-caption">
+                                <h3>Cultural Bridge Building</h3>
+                                <p>Connecting traditional culture with modern community engagement</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Intergenerational Learning</div>
+                            <div class="gallery-caption">
+                                <h3>Wisdom Exchange</h3>
+                                <p>Facilitating knowledge exchange between generations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Traditional Education Center Engagement</h3>
+                    <p class="activity-description">Engaged deeply with traditional Korean educational values and practices, contributing to cultural preservation and community education through Hyanggyo activities. Participated in traditional ceremonies, educational programs, and community workshops that preserve and transmit important cultural knowledge and values to future generations.</p>
+                    <div class="activity-details">
+                        <strong>Cultural Activities:</strong> Traditional Korean ceremonies and ritual participation, cultural education and heritage preservation programs, community workshops and educational outreach, intergenerational learning and knowledge exchange, traditional values and philosophy study, heritage documentation and preservation efforts
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SIGN LANGUAGE PAGE ==================== -->
+            <div id="sign-language" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Sign Language Accessibility Services</h2>
+                    <p class="section-description">Dedicated provision of sign language interpretation and communication support for deaf and hard-of-hearing community members, promoting accessibility, inclusion, and equal participation in various community settings while advocating for universal design and barrier-free communication.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Professional Interpretation Service</div>
+                            <div class="gallery-caption">
+                                <h3>Event Accessibility</h3>
+                                <p>Providing professional sign language services at community events</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">ASL Skill Development</div>
+                            <div class="gallery-caption">
+                                <h3>Continuous Learning</h3>
+                                <p>Ongoing improvement and mastery of sign language communication</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Community Support Services</div>
+                            <div class="gallery-caption">
+                                <h3>Inclusive Communication</h3>
+                                <p>Promoting accessible communication practices in the community</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Advocacy and Awareness</div>
+                            <div class="gallery-caption">
+                                <h3>Accessibility Advocacy</h3>
+                                <p>Raising awareness about deaf culture and accessibility needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Professional Accessibility Support Services</h3>
+                    <p class="activity-description">Provided comprehensive and professional sign language interpretation services for community events, meetings, and educational programs to ensure full accessibility and inclusion for deaf and hard-of-hearing individuals. Committed to breaking down communication barriers and promoting equal participation in community life through skilled interpretation and advocacy.</p>
+                    <div class="activity-details">
+                        <strong>Service Portfolio:</strong> Professional event interpretation and real-time communication support, meeting facilitation and group communication assistance, educational support and classroom interpretation, accessibility consulting and barrier assessment, community outreach and awareness programs, deaf culture education and sensitivity training
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SPANISH PAGE ==================== -->
+            <div id="spanish" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Spanish Language Support Services</h2>
+                    <p class="section-description">Comprehensive translation and communication assistance to Spanish-speaking individuals and families, helping bridge language barriers and facilitate equitable access to community services, resources, and opportunities while promoting multicultural understanding and inclusion.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Translation Services Excellence</div>
+                            <div class="gallery-caption">
+                                <h3>Language Bridge Building</h3>
+                                <p>Providing professional translation and interpretation services</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Cultural Mediation</div>
+                            <div class="gallery-caption">
+                                <h3>Cross-Cultural Communication</h3>
+                                <p>Facilitating understanding between different cultural communities</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Community Integration Support</div>
+                            <div class="gallery-caption">
+                                <h3>Community Navigation</h3>
+                                <p>Supporting Spanish-speaking community members in accessing services</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Educational Outreach</div>
+                            <div class="gallery-caption">
+                                <h3>Multilingual Education</h3>
+                                <p>Providing educational support in Spanish-speaking communities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Multilingual Community Support Excellence</h3>
+                    <p class="activity-description">Provided essential Spanish translation and interpretation services to help Spanish-speaking community members access vital services, participate fully in community life, and navigate important processes. Served as cultural mediator and advocate, promoting understanding and inclusion while supporting community integration and empowerment.</p>
+                    <div class="activity-details">
+                        <strong>Service Offerings:</strong> Professional document translation and interpretation services, verbal interpretation for meetings and appointments, cultural guidance and community navigation assistance, advocacy support and resource connection, educational support and tutoring services, community outreach and multicultural programming
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== GLOBAL ENSEMBLE PAGE ==================== -->
+            <div id="global-ensemble" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Global Ensemble International Programs</h2>
+                    <p class="section-description">Transformative participation in global programs and international collaborations that have significantly broadened my perspective, enhanced understanding of diverse cultures and global issues, and developed cross-cultural competencies essential for effective global citizenship and international cooperation.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">International Conference Participation</div>
+                            <div class="gallery-caption">
+                                <h3>Global Dialogue</h3>
+                                <p>Engaging in meaningful international forums and policy discussions</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Cross-Cultural Exchange</div>
+                            <div class="gallery-caption">
+                                <h3>Cultural Bridge Building</h3>
+                                <p>Building meaningful connections across diverse cultural backgrounds</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">International Collaboration</div>
+                            <div class="gallery-caption">
+                                <h3>Global Cooperation</h3>
+                                <p>Working on collaborative projects with international partners</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Global Citizenship Development</div>
+                            <div class="gallery-caption">
+                                <h3>World Perspective</h3>
+                                <p>Developing understanding of global interconnectedness and responsibility</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">International Program Excellence</h3>
+                    <p class="activity-description">Active participation in comprehensive global ensemble programs, contributing meaningfully to international dialogue and cross-cultural understanding through collaborative projects and initiatives. Developed advanced intercultural competencies, global perspective, and skills essential for effective international cooperation and global citizenship.</p>
+                    <div class="activity-details">
+                        <strong>Global Competencies Developed:</strong> International collaboration and project management, cultural sensitivity and cross-cultural communication, global perspective development and worldview expansion, multilingual communication and language skills, international relations and diplomacy understanding, global citizenship and social responsibility awareness
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== REFUGEE PAGE ==================== -->
+            <div id="refugee" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Refugee Support Organization</h2>
+                    <p class="section-description">Dedicated and compassionate work with refugee communities, providing comprehensive support, advocacy, and assistance to help displaced individuals and families rebuild their lives, integrate successfully into new communities, and access essential resources and opportunities for sustainable resettlement.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Direct Community Support</div>
+                            <div class="gallery-caption">
+                                <h3>Hands-On Assistance</h3>
+                                <p>Providing direct, compassionate support to refugee families</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Advocacy and Awareness</div>
+                            <div class="gallery-caption">
+                                <h3>Human Rights Advocacy</h3>
+                                <p>Raising awareness about refugee issues and human rights</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Integration Support</div>
+                            <div class="gallery-caption">
+                                <h3>Community Integration</h3>
+                                <p>Facilitating successful integration into local communities</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Resource Navigation</div>
+                            <div class="gallery-caption">
+                                <h3>Essential Services</h3>
+                                <p>Connecting refugees with vital resources and services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Comprehensive Refugee Support Services</h3>
+                    <p class="activity-description">Provided comprehensive and culturally sensitive support to refugee families including language assistance, cultural orientation, and connection to essential services and resources. Served as advocate and bridge between refugee communities and local institutions, helping to ensure successful integration and sustainable resettlement outcomes.</p>
+                    <div class="activity-details">
+                        <strong>Support Services Provided:</strong> Language interpretation and translation assistance, cultural bridging and orientation programs, resource navigation and service connection, advocacy and rights protection, community integration support and mentoring, emergency assistance and crisis intervention
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SPORTS PAGE ==================== -->
+            <div id="sports" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Hockey Athletic Excellence</h2>
+                    <p class="section-description">Comprehensive involvement in competitive hockey, demonstrating athletic excellence, teamwork, discipline, and leadership while building character and developing valuable life skills through intensive training, competitive play, and commitment to athletic and personal development.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Intensive Hockey Training</div>
+                            <div class="gallery-caption">
+                                <h3>Skill Development</h3>
+                                <p>Rigorous training and continuous skill improvement</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Team Competition Excellence</div>
+                            <div class="gallery-caption">
+                                <h3>Competitive Achievement</h3>
+                                <p>Successful participation in competitive matches and tournaments</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Team Leadership</div>
+                            <div class="gallery-caption">
+                                <h3>Athletic Leadership</h3>
+                                <p>Leading team through challenges and inspiring excellence</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Character Development</div>
+                            <div class="gallery-caption">
+                                <h3>Personal Growth</h3>
+                                <p>Building character through sport and athletic commitment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3 class="activity-title">Competitive Hockey Team Excellence</h3>
+                    <p class="activity-description">Active and dedicated member of competitive hockey team, developing advanced athletic skills, teamwork capabilities, and leadership abilities through regular intensive training and competitive play. Demonstrated commitment to excellence, discipline, and continuous improvement while contributing to team success and positive team culture.</p>
+                    <div class="activity-details">
+                        <strong>Athletic Skills Developed:</strong> Advanced teamwork and collaboration abilities, discipline and commitment to excellence, strategic thinking and game analysis, physical fitness and athletic conditioning, leadership under pressure and in competitive situations, resilience and perseverance through challenges
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== AWARDS PAGE ==================== -->
+            <div id="awards" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Awards & Recognition</h2>
+                    <p class="section-description">Comprehensive recognition received for various achievements in leadership excellence, community service impact, academic distinction, and volunteer contributions that demonstrate sustained commitment to excellence and positive community impact across multiple domains of engagement and service.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Award Ceremony Recognition</div>
+                            <div class="gallery-caption">
+                                <h3>Achievement Celebration</h3>
+                                <p>Formal recognition of outstanding contributions and achievements</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Certificate Collection</div>
+                            <div class="gallery-caption">
+                                <h3>Honor Recognition</h3>
+                                <p>Diverse collection of awards and recognition certificates</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Leadership Awards</div>
+                            <div class="gallery-caption">
+                                <h3>Leadership Excellence</h3>
+                                <p>Recognition for outstanding leadership and positive influence</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Service Recognition</div>
+                            <div class="gallery-caption">
+                                <h3>Community Impact</h3>
+                                <p>Awards recognizing significant community service contributions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <h3 class="award-title">Community Service Excellence Award</h3>
+                    <p class="award-org">Regional Community Organization</p>
+                    <p>Recognized for outstanding dedication, sustained impact, and innovative approaches in community volunteer work and service initiatives that have created meaningful positive change and inspired others to engage in community service.</p>
+                </div>
+
+                <div class="award-item">
+                    <h3 class="award-title">Leadership Achievement Recognition</h3>
+                    <p class="award-org">Educational Institution Leadership Council</p>
+                    <p>Awarded for demonstrating exceptional leadership skills, positive influence in student and community activities, and commitment to developing others through mentorship and collaborative leadership approaches.</p>
+                </div>
+
+                <div class="award-item">
+                    <h3 class="award-title">Volunteer Excellence Certificate</h3>
+                    <p class="award-org">National Volunteer Organization</p>
+                    <p>Honored for consistent, impactful volunteer contributions across multiple programs and initiatives, demonstrating reliability, innovation, and commitment to service excellence over an extended period of dedicated community engagement.</p>
+                </div>
+
+                <div class="award-item">
+                    <h3 class="award-title">International Program Distinguished Participant</h3>
+                    <p class="award-org">Global Ensemble International Foundation</p>
+                    <p>Recognized for exceptional participation in international programs, cross-cultural leadership, and contributions to global understanding and cooperation through meaningful international engagement and collaboration.</p>
+                </div>
+            </div>
+
+            <!-- ==================== NEWS STORIES PAGE ==================== -->
+            <div id="news" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">News Stories & Media Coverage</h2>
+                    <p class="section-description">Comprehensive media coverage and news features highlighting my activities, achievements, and contributions to various community and social initiatives. These stories reflect the impact of dedicated service and the recognition of efforts to create positive change in communities and organizations.</p>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="gallery-image">Media Interview Session</div>
+                            <div class="gallery-caption">
+                                <h3>Community Leadership Stories</h3>
+                                <p>Speaking with media about community initiatives and social impact projects</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Press Coverage Event</div>
+                            <div class="gallery-caption">
+                                <h3>Media Recognition</h3>
+                                <p>News articles and media features highlighting community contributions</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Feature Story Documentation</div>
+                            <div class="gallery-caption">
+                                <h3>Impact Documentation</h3>
+                                <p>Comprehensive coverage of volunteer work and community engagement</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">Award Ceremony Coverage</div>
+                            <div class="gallery-caption">
+                                <h3>Achievement Recognition</h3>
+                                <p>Media coverage of awards and recognition for community service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Local Community Newsletter</div>
+                    <h3 class="news-title">Young Leader Makes Significant Impact Through Comprehensive Volunteer Work</h3>
+                    <p>Feature story highlighting exceptional leadership role in community volunteer programs and the substantial positive impact on local residents through various innovative service initiatives, including work with refugee communities, environmental conservation, and multicultural programs.</p>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">University Publication</div>
+                    <h3 class="news-title">Student Spotlight: Bridging Cultures Through Dedicated Service and Leadership</h3>
+                    <p>Comprehensive article focusing on multicultural volunteer work, efforts to support refugee communities, and initiatives to promote cross-cultural understanding on campus and in the broader community through innovative programming and dedicated service.</p>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Regional Sports Magazine</div>
+                    <h3 class="news-title">Hockey Player Successfully Balances Athletic Excellence with Community Service</h3>
+                    <p>Profile piece showcasing the remarkable balance between competitive sports excellence and extensive community engagement, highlighting the valuable life skills and leadership qualities developed through athletic participation and how they translate to community service impact.</p>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Environmental Conservation Journal</div>
+                    <h3 class="news-title">Student Environmental Leader Drives Campus Sustainability and Marine Conservation</h3>
+                    <p>In-depth feature on environmental leadership including campus sustainability initiatives, marine conservation work with Blue Scan project, and comprehensive environmental education and advocacy efforts that have created lasting positive environmental impact.</p>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Cultural Heritage Magazine</div>
+                    <h3 class="news-title">Cultural Ambassador Promotes Traditional Heritage While Serving Diverse Communities</h3>
+                    <p>Story highlighting role as Jeju Galot cultural ambassador and work in traditional Korean education through Hyanggyo, demonstrating commitment to cultural preservation while simultaneously serving diverse community needs through multilingual support and accessibility services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==================== SLIDER FUNCTIONALITY ====================
+        const sliders = {};
+
+        function initializeSlider(sliderId) {
+            const slider = document.getElementById(sliderId);
+            if (!slider) return;
+            
+            const slides = slider.querySelectorAll('.slide');
+            const dotsContainer = document.getElementById(sliderId.replace('-slider', '-dots'));
+            
+            sliders[sliderId] = {
+                currentSlide: 0,
+                totalSlides: slides.length,
+                slider: slider,
+                slides: slides,
+                dotsContainer: dotsContainer
+            };
+
+            // Create dots
+            if (dotsContainer) {
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < slides.length; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = i === 0 ? 'dot active' : 'dot';
+                    dot.onclick = () => goToSlide(sliderId, i);
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            updateSlider(sliderId);
+        }
+
+        function updateSlider(sliderId) {
+            const sliderData = sliders[sliderId];
+            if (!sliderData) return;
+            
+            const translateX = -sliderData.currentSlide * 100;
+            sliderData.slider.style.transform = `translateX(${translateX}%)`;
+
+            // Update dots
+            if (sliderData.dotsContainer) {
+                const dots = sliderData.dotsContainer.querySelectorAll('.dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === sliderData.currentSlide);
+                });
+            }
+        }
+
+        function nextSlide(sliderId) {
+            const sliderData = sliders[sliderId];
+            if (!sliderData) return;
+            
+            sliderData.currentSlide = (sliderData.currentSlide + 1) % sliderData.totalSlides;
+            updateSlider(sliderId);
+        }
+
+        function previousSlide(sliderId) {
+            const sliderData = sliders[sliderId];
+            if (!sliderData) return;
+            
+            sliderData.currentSlide = sliderData.currentSlide === 0 ? sliderData.totalSlides - 1 : sliderData.currentSlide - 1;
+            updateSlider(sliderId);
+        }
+
+        function goToSlide(sliderId, slideIndex) {
+            const sliderData = sliders[sliderId];
+            if (!sliderData) return;
+            
+            sliderData.currentSlide = slideIndex;
+            updateSlider(sliderId);
+        }
+
+        // ==================== TAB FUNCTIONALITY ====================
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Remove active class from all nav buttons
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            const selectedTab = document.getElementById(tabName);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+
+            // Add active class to appropriate button (for main tabs)
+            const mainTabs = ['home', 'leadership', 'global-ensemble', 'refugee', 'sports', 'awards', 'news'];
+            if (mainTabs.includes(tabName)) {
+                const button = event?.target;
+                if (button) {
+                    button.classList.add('active');
+                }
+            }
+
+            // Scroll to top when switching tabs
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Initialize slider for the current tab if it exists
+            const sliderId = tabName + '-slider';
+            if (document.getElementById(sliderId) && !sliders[sliderId]) {
+                initializeSlider(sliderId);
+            }
+        }
+
+        // ==================== INITIALIZATION ====================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize home slider
+            initializeSlider('home-slider');
+
+            // Auto-rotate sliders every 6 seconds
+            setInterval(() => {
+                Object.keys(sliders).forEach(sliderId => {
+                    const tabContent = document.querySelector(`#${sliderId.replace('-slider', '')}`);
+                    if (tabContent && tabContent.classList.contains('active')) {
+                        nextSlide(sliderId);
+                    }
+                });
+            }, 6000);
+
+            // Add hover effects to interactive elements
+            const interactiveElements = document.querySelectorAll('.activity-card, .award-item, .news-item');
+            interactiveElements.forEach(element => {
+                element.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                element.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Add smooth scroll behavior for navigation
+            document.querySelectorAll('.nav-btn, .dropdown-item').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Add visual feedback
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+
+            // Handle dropdown menu interactions for mobile
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                const dropdownMenu = item.querySelector('.dropdown-menu');
+                if (dropdownMenu) {
+                    item.addEventListener('click', function(e) {
+                        if (window.innerWidth <= 768) {
+                            e.preventDefault();
+                            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                        }
+                    });
+                }
+            });
+
+            // Add keyboard navigation support
+            document.addEventListener('keydown', function(e) {
+                const activeTab = document.querySelector('.tab-content.active');
+                if (!activeTab) return;
+                
+                const sliderId = activeTab.id + '-slider';
+                if (sliders[sliderId]) {
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        previousSlide(sliderId);
+                    } else if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        nextSlide(sliderId);
+                    }
+                }
+            });
+
+            // Optimize performance for large screens
+            if (window.innerWidth > 1200) {
+                // Enable hardware acceleration for smooth animations
+                const animatedElements = document.querySelectorAll('.activity-card, .award-item, .news-item, .slide');
+                animatedElements.forEach(element => {
+                    element.style.willChange = 'transform';
+                });
+            }
+        });
+
+        // ==================== RESPONSIVE OPTIMIZATION ====================
+        window.addEventListener('resize', function() {
+            // Recalculate slider positions on resize
+            Object.keys(sliders).forEach(sliderId => {
+                updateSlider(sliderId);
+            });
+        });
+
+        // ==================== ACCESSIBILITY ENHANCEMENTS ====================
+        // Add focus management for keyboard users
+        document.addEventListener('focusin', function(e) {
+            if (e.target.classList.contains('nav-btn') || e.target.classList.contains('dropdown-item')) {
+                e.target.style.outline = '2px solid #3498db';
+            }
+        });
+
+        document.addEventListener('focusout', function(e) {
+            if (e.target.classList.contains('nav-btn') || e.target.classList.contains('dropdown-item')) {
+                e.target.style.outline = '';
+            }
+        });
+    </script>
+</body>
+</html>

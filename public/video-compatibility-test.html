@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Compatibility Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        video { margin: 10px 0; border: 1px solid #ccc; }
+        .status { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .warning { background-color: #fff3cd; color: #856404; }
+    </style>
+</head>
+<body>
+    <h1>Video Compatibility Test</h1>
+    
+    <h2>Problem Videos</h2>
+    
+    <h3>Sports Activity Video 01</h3>
+    <video id="sports-video" controls width="480" height="360" preload="metadata" muted>
+        <source src="/assets/Sports/sports-activity-video-01.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'">
+        <source src="/assets/Sports/sports-activity-video-01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="sports-status" class="status"></div>
+    
+    <h3>GEM Activity Video 02</h3>
+    <video id="gem-video" controls width="480" height="360" preload="metadata" muted>
+        <source src="/assets/GEM/gem-activity-video-02.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'">
+        <source src="/assets/GEM/gem-activity-video-02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="gem-status" class="status"></div>
+    
+    <h3>Working Video (for comparison)</h3>
+    <video id="working-video" controls width="480" height="360" preload="metadata" muted>
+        <source src="/assets/Leadership/leadership-training-video.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'">
+        <source src="/assets/Leadership/leadership-training-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="working-status" class="status"></div>
+    
+    <h2>Manual Test Links</h2>
+    <p><a href="/assets/Sports/sports-activity-video-01.mp4" target="_blank">Sports Video Direct Link</a></p>
+    <p><a href="/assets/GEM/gem-activity-video-02.mp4" target="_blank">GEM Video Direct Link</a></p>
+    <p><a href="/assets/Leadership/leadership-training-video.mp4" target="_blank">Leadership Video Direct Link</a></p>
+    
+    <script>
+        function setupVideoTest(videoId, statusId, videoName) {
+            const video = document.getElementById(videoId);
+            const status = document.getElementById(statusId);
+            
+            video.addEventListener('loadstart', () => {
+                status.innerHTML = `${videoName}: Load started...`;
+                status.className = 'status warning';
+            });
+            
+            video.addEventListener('loadedmetadata', () => {
+                status.innerHTML = `${videoName}: ✅ Metadata loaded successfully<br>Duration: ${video.duration.toFixed(2)}s, Size: ${video.videoWidth}x${video.videoHeight}`;
+                status.className = 'status success';
+            });
+            
+            video.addEventListener('canplay', () => {
+                console.log(`${videoName}: Can play`);
+            });
+            
+            video.addEventListener('error', (e) => {
+                let errorMsg = `${videoName}: ❌ Error occurred`;
+                if (video.error) {
+                    errorMsg += `<br>Error Code: ${video.error.code}`;
+                    errorMsg += `<br>Error Message: ${video.error.message || 'Unknown'}`;
+                    
+                    // Decode error codes
+                    switch(video.error.code) {
+                        case 1:
+                            errorMsg += '<br>MEDIA_ERR_ABORTED: You aborted the video playback.';
+                            break;
+                        case 2:
+                            errorMsg += '<br>MEDIA_ERR_NETWORK: A network error caused the video download to fail.';
+                            break;
+                        case 3:
+                            errorMsg += '<br>MEDIA_ERR_DECODE: The video playback was aborted due to a corruption problem.';
+                            break;
+                        case 4:
+                            errorMsg += '<br>MEDIA_ERR_SRC_NOT_SUPPORTED: The video could not be loaded (format not supported).';
+                            break;
+                    }
+                }
+                status.innerHTML = errorMsg;
+                status.className = 'status error';
+            });
+            
+            video.addEventListener('abort', () => {
+                status.innerHTML = `${videoName}: ⚠️ Loading aborted`;
+                status.className = 'status warning';
+            });
+            
+            video.addEventListener('stalled', () => {
+                console.log(`${videoName}: Stalled`);
+            });
+            
+            video.addEventListener('suspend', () => {
+                console.log(`${videoName}: Suspended`);
+            });
+        }
+        
+        // Setup tests for all videos
+        setupVideoTest('sports-video', 'sports-status', 'Sports Video');
+        setupVideoTest('gem-video', 'gem-status', 'GEM Video');
+        setupVideoTest('working-video', 'working-status', 'Leadership Video');
+        
+        // Browser capabilities
+        console.log('Browser video capabilities:');
+        const testVideo = document.createElement('video');
+        console.log('MP4 support:', testVideo.canPlayType('video/mp4'));
+        console.log('MP4 with codecs:', testVideo.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"'));
+    </script>
+</body>
+</html>

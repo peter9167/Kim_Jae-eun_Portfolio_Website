@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(copy index.html index_backup.html)",
+      "Bash(cp:*)",
+      "Bash(ren:*)",
+      "Bash(mv:*)",
+      "Bash(for i in {01..06})",
+      "Bash(do if [[ -f \"KakaoTalk_20250714_194134437_0$((i-1)).jpg\" ]])",
+      "Bash(then mv \"KakaoTalk_20250714_194134437_0$((i-1)).jpg\" \"gem-activity-$i.jpg\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run init-db:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(set PORT=3001)",
+      "Bash(dir:*)",
+      "Bash(cmd /c:*)",
+      "Bash(powershell:*)",
+      "Bash(copy index.html publicindex.html)",
+      "Bash(grep:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git stash:*)",
+      "Bash(rm:*)",
+      "Bash(node:*)",
+      "Bash(npx vercel dev:*)"
+    ],
+    "deny": []
+  }
+}
