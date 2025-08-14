@@ -1,6 +1,6 @@
 
 // Auto-generated static media data for Vercel deployment
-// Generated on: 2025-08-14T02:52:40.123Z
+// Generated on: 2025-08-14T03:01:23.267Z
 
 window.STATIC_MEDIA_DATA = {
   "awards": [
@@ -567,7 +567,6 @@ window.STATIC_MEDIA_DATA = {
       "uploadDate": "2025-08-14 02:47:59"
     }
   ],
-  "global ensemble": [],
   "global-ensemble": [
     {
       "id": 270,
@@ -685,15 +684,6 @@ window.STATIC_MEDIA_DATA = {
       "type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-video-02.mp4",
       "uploadDate": "2025-08-14 02:48:10"
-    },
-    {
-      "id": 283,
-      "filename": "global-ensemble/settings.local.json",
-      "title": "Global Ensemble 14",
-      "description": "Global Ensemble related image",
-      "type": "image",
-      "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/settings.local.json",
-      "uploadDate": "2025-08-14 02:48:11"
     }
   ],
   "hyanggyo": [
