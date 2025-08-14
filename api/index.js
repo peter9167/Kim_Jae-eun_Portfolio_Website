@@ -42,6 +42,33 @@ app.get('/api/health', (req, res) => {
     });
 });
 
+// Media API endpoints
+app.post('/api/media-simple', (req, res) => {
+    // Simple media upload endpoint
+    res.json({
+        success: true,
+        message: 'Upload functionality temporarily disabled',
+        data: null
+    });
+});
+
+app.get('/api/media-simple', (req, res) => {
+    // Simple media list endpoint
+    res.json({
+        success: true,
+        data: [],
+        message: 'Media list temporarily empty'
+    });
+});
+
+app.delete('/api/media-simple', (req, res) => {
+    // Simple media delete endpoint
+    res.json({
+        success: true,
+        message: 'Delete functionality temporarily disabled'
+    });
+});
+
 // Static files routes
 app.get('/admin-script.js', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'admin-script.js'));

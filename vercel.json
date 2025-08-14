@@ -4,10 +4,6 @@
     {
       "src": "api/index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -20,12 +16,24 @@
       "dest": "/api/index.js"
     },
     {
-      "src": "/(.*\\.(css|js|html|png|jpg|jpeg|gif|ico|svg|mp4|webm|mov))",
-      "dest": "/public/$1"
+      "src": "/admin-script.js",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/admin-styles.css",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/script.js",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/api/index.js"
     },
     {
       "src": "/",
-      "dest": "/public/index.html"
+      "dest": "/api/index.js"
     }
   ]
 }
