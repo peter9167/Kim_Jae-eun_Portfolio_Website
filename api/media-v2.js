@@ -1,5 +1,5 @@
 // Supabase-powered Media API
-const { getDatabase } = require('../config/database');
+const { getDatabase, initializeDatabase } = require('../config/database');
 const { handleSupabaseUpload, uploadToSupabase, deleteFromSupabase } = require('../middleware/supabase-upload');
 const { adminAuth } = require('../middleware/auth');
 
@@ -15,7 +15,7 @@ module.exports = async function handler(req, res) {
     }
 
     try {
-        const db = getDatabase();
+        const db = await initializeDatabase();
 
         if (req.method === 'GET') {
             // Get all media with Supabase URLs
