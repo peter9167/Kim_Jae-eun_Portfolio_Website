@@ -2,14 +2,14 @@
 // Auto-generated static media data for Vercel deployment
 // Generated on: 2025-08-14T03:01:23.267Z
 
-window.STATIC_MEDIA_DATA = {
+window.staticMediaData = {
   "awards": [
     {
       "id": 217,
       "filename": "awards/KakaoTalk_20250716_161559339.jpg",
       "title": "AI Drone Competition 1",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161559339.jpg",
       "uploadDate": "2025-08-14 02:47:21"
     },
@@ -18,7 +18,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161559339_01.jpg",
       "title": "AI Drone Competition 2",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161559339_01.jpg",
       "uploadDate": "2025-08-14 02:47:22"
     },
@@ -27,7 +27,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161559339_02.jpg",
       "title": "AI Drone Competition 3",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161559339_02.jpg",
       "uploadDate": "2025-08-14 02:47:22"
     },
@@ -36,7 +36,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161559339_03.jpg",
       "title": "AI Drone Competition 4",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161559339_03.jpg",
       "uploadDate": "2025-08-14 02:47:23"
     },
@@ -45,7 +45,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161559339_04.jpg",
       "title": "AI Drone Competition 5",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161559339_04.jpg",
       "uploadDate": "2025-08-14 02:47:24"
     },
@@ -54,7 +54,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161559339_05.jpg",
       "title": "AI Drone Competition 6",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161559339_05.jpg",
       "uploadDate": "2025-08-14 02:47:25"
     },
@@ -63,7 +63,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161559339_06.jpg",
       "title": "AI Drone Competition 7",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161559339_06.jpg",
       "uploadDate": "2025-08-14 02:47:26"
     },
@@ -72,7 +72,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161655180.jpg",
       "title": "Jeju Traditional Culture Design Contest 8",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161655180.jpg",
       "uploadDate": "2025-08-14 02:47:26"
     },
@@ -81,7 +81,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161655180_01.jpg",
       "title": "Jeju Traditional Culture Design Contest 9",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161655180_01.jpg",
       "uploadDate": "2025-08-14 02:47:27"
     },
@@ -90,7 +90,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161655180_02.jpg",
       "title": "Jeju Traditional Culture Design Contest 10",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161655180_02.jpg",
       "uploadDate": "2025-08-14 02:47:28"
     },
@@ -99,7 +99,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/KakaoTalk_20250716_161655180_03.jpg",
       "title": "Jeju Traditional Culture Design Contest 11",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/KakaoTalk_20250716_161655180_03.jpg",
       "uploadDate": "2025-08-14 02:47:28"
     },
@@ -108,7 +108,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-01.jpg",
       "title": "Ice Hockey Award 12",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-01.jpg",
       "uploadDate": "2025-08-14 02:47:15"
     },
@@ -117,7 +117,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-02.jpg",
       "title": "Ice Hockey Award 13",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-02.jpg",
       "uploadDate": "2025-08-14 02:47:16"
     },
@@ -126,7 +126,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-03.jpg",
       "title": "Ice Hockey Award 14",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-03.jpg",
       "uploadDate": "2025-08-14 02:47:16"
     },
@@ -135,7 +135,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-04.jpg",
       "title": "Ice Hockey Award 15",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-04.jpg",
       "uploadDate": "2025-08-14 02:47:17"
     },
@@ -144,7 +144,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-05.jpg",
       "title": "Ice Hockey Award 16",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-05.jpg",
       "uploadDate": "2025-08-14 02:47:17"
     },
@@ -153,7 +153,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-06.jpg",
       "title": "Ice Hockey Award 17",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-06.jpg",
       "uploadDate": "2025-08-14 02:47:18"
     },
@@ -162,7 +162,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-07.jpg",
       "title": "Ice Hockey Award 18",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-07.jpg",
       "uploadDate": "2025-08-14 02:47:18"
     },
@@ -171,7 +171,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-08.jpg",
       "title": "Ice Hockey Award 19",
       "description": "Awards & Competitions related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-08.jpg",
       "uploadDate": "2025-08-14 02:47:19"
     },
@@ -180,7 +180,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "awards/ice-hockey-award-video.mp4",
       "title": "Ice Hockey Award 20",
       "description": "Awards & Competitions related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/awards/ice-hockey-award-video.mp4",
       "uploadDate": "2025-08-14 02:47:20"
     }
@@ -191,7 +191,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-01.jpg",
       "title": "FOS Activity 1",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-01.jpg",
       "uploadDate": "2025-08-14 02:47:29"
     },
@@ -200,7 +200,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-02.jpg",
       "title": "FOS Activity 2",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-02.jpg",
       "uploadDate": "2025-08-14 02:47:29"
     },
@@ -209,7 +209,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-03.jpg",
       "title": "FOS Activity 3",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-03.jpg",
       "uploadDate": "2025-08-14 02:47:29"
     },
@@ -218,7 +218,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-04.jpg",
       "title": "FOS Activity 4",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-04.jpg",
       "uploadDate": "2025-08-14 02:47:30"
     },
@@ -227,7 +227,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-05.jpg",
       "title": "FOS Activity 5",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-05.jpg",
       "uploadDate": "2025-08-14 02:47:30"
     },
@@ -236,7 +236,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-06.jpg",
       "title": "FOS Activity 6",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-06.jpg",
       "uploadDate": "2025-08-14 02:47:31"
     },
@@ -245,7 +245,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-07.jpg",
       "title": "FOS Activity 7",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-07.jpg",
       "uploadDate": "2025-08-14 02:47:32"
     },
@@ -254,7 +254,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-08.jpg",
       "title": "FOS Activity 8",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-08.jpg",
       "uploadDate": "2025-08-14 02:47:32"
     },
@@ -263,7 +263,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-09.jpg",
       "title": "FOS Activity 9",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-09.jpg",
       "uploadDate": "2025-08-14 02:47:33"
     },
@@ -272,7 +272,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-10.jpg",
       "title": "FOS Activity 10",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-10.jpg",
       "uploadDate": "2025-08-14 02:47:34"
     },
@@ -281,7 +281,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-11.jpg",
       "title": "FOS Activity 11",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-11.jpg",
       "uploadDate": "2025-08-14 02:47:35"
     },
@@ -290,7 +290,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-12.jpg",
       "title": "FOS Activity 12",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-12.jpg",
       "uploadDate": "2025-08-14 02:47:36"
     },
@@ -299,7 +299,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-13.jpg",
       "title": "FOS Activity 13",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-13.jpg",
       "uploadDate": "2025-08-14 02:47:36"
     },
@@ -308,7 +308,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-14.jpg",
       "title": "FOS Activity 14",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-14.jpg",
       "uploadDate": "2025-08-14 02:47:37"
     },
@@ -317,7 +317,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-15.jpg",
       "title": "FOS Activity 15",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-15.jpg",
       "uploadDate": "2025-08-14 02:47:37"
     },
@@ -326,7 +326,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-16.jpg",
       "title": "FOS Activity 16",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-16.jpg",
       "uploadDate": "2025-08-14 02:47:38"
     },
@@ -335,7 +335,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-17.jpg",
       "title": "FOS Activity 17",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-17.jpg",
       "uploadDate": "2025-08-14 02:47:38"
     },
@@ -344,7 +344,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-18.jpg",
       "title": "FOS Activity 18",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-18.jpg",
       "uploadDate": "2025-08-14 02:47:39"
     },
@@ -353,7 +353,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-19.jpg",
       "title": "FOS Activity 19",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-19.jpg",
       "uploadDate": "2025-08-14 02:47:39"
     },
@@ -362,7 +362,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-20.jpg",
       "title": "FOS Activity 20",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-20.jpg",
       "uploadDate": "2025-08-14 02:47:40"
     },
@@ -371,7 +371,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-21.jpg",
       "title": "FOS Activity 21",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-21.jpg",
       "uploadDate": "2025-08-14 02:47:40"
     },
@@ -380,7 +380,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-22.jpg",
       "title": "FOS Activity 22",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-22.jpg",
       "uploadDate": "2025-08-14 02:47:41"
     },
@@ -389,7 +389,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-23.jpg",
       "title": "FOS Activity 23",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-23.jpg",
       "uploadDate": "2025-08-14 02:47:42"
     },
@@ -398,7 +398,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-24.jpg",
       "title": "FOS Activity 24",
       "description": "FOS Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-24.jpg",
       "uploadDate": "2025-08-14 02:47:43"
     },
@@ -407,7 +407,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-video-01.mp4",
       "title": "FOS Activity 25",
       "description": "FOS Activities related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-video-01.mp4",
       "uploadDate": "2025-08-14 02:47:46"
     },
@@ -416,7 +416,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-video-02.mp4",
       "title": "FOS Activity 26",
       "description": "FOS Activities related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-video-02.mp4",
       "uploadDate": "2025-08-14 02:47:47"
     },
@@ -425,7 +425,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-video-03.mp4",
       "title": "FOS Activity 27",
       "description": "FOS Activities related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-video-03.mp4",
       "uploadDate": "2025-08-14 02:47:48"
     },
@@ -434,7 +434,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-video-04.mp4",
       "title": "FOS Activity 28",
       "description": "FOS Activities related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-video-04.mp4",
       "uploadDate": "2025-08-14 02:47:50"
     },
@@ -443,7 +443,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "fos/fos-activity-video-05.mp4",
       "title": "FOS Activity 29",
       "description": "FOS Activities related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/fos/fos-activity-video-05.mp4",
       "uploadDate": "2025-08-14 02:47:51"
     }
@@ -454,7 +454,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/KakaoTalk_20250714_194258529_07.jpg",
       "title": "GEM Program 1",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/KakaoTalk_20250714_194258529_07.jpg",
       "uploadDate": "2025-08-14 02:47:59"
     },
@@ -463,7 +463,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/KakaoTalk_20250714_194258529_08.jpg",
       "title": "GEM Program 2",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/KakaoTalk_20250714_194258529_08.jpg",
       "uploadDate": "2025-08-14 02:48:00"
     },
@@ -472,7 +472,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-activity-video-04.mp4",
       "title": "GEM Activity 3",
       "description": "GEM Program related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-activity-video-04.mp4",
       "uploadDate": "2025-08-14 02:47:52"
     },
@@ -481,7 +481,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-activity-video-05.mp4",
       "title": "GEM Activity 4",
       "description": "GEM Program related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-activity-video-05.mp4",
       "uploadDate": "2025-08-14 02:47:54"
     },
@@ -490,7 +490,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-01.jpg",
       "title": "GEM Program 5",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-01.jpg",
       "uploadDate": "2025-08-14 02:47:54"
     },
@@ -499,7 +499,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-02.jpg",
       "title": "GEM Program 6",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-02.jpg",
       "uploadDate": "2025-08-14 02:47:55"
     },
@@ -508,7 +508,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-03.jpg",
       "title": "GEM Program 7",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-03.jpg",
       "uploadDate": "2025-08-14 02:47:55"
     },
@@ -517,7 +517,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-04.jpg",
       "title": "GEM Program 8",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-04.jpg",
       "uploadDate": "2025-08-14 02:47:56"
     },
@@ -526,7 +526,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-05.jpg",
       "title": "GEM Program 9",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-05.jpg",
       "uploadDate": "2025-08-14 02:47:56"
     },
@@ -535,7 +535,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-06.jpg",
       "title": "GEM Program 10",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-06.jpg",
       "uploadDate": "2025-08-14 02:47:57"
     },
@@ -544,7 +544,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-07.jpg",
       "title": "GEM Program 11",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-07.jpg",
       "uploadDate": "2025-08-14 02:47:57"
     },
@@ -553,7 +553,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-10.jpg",
       "title": "GEM Program 12",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-10.jpg",
       "uploadDate": "2025-08-14 02:47:58"
     },
@@ -562,7 +562,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "gem/gem-program-11.jpg",
       "title": "GEM Program 13",
       "description": "GEM Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/gem/gem-program-11.jpg",
       "uploadDate": "2025-08-14 02:47:59"
     }
@@ -573,7 +573,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-01.jpg",
       "title": "Global Ensemble 1",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-01.jpg",
       "uploadDate": "2025-08-14 02:48:01"
     },
@@ -582,7 +582,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-02.jpg",
       "title": "Global Ensemble 2",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-02.jpg",
       "uploadDate": "2025-08-14 02:48:02"
     },
@@ -591,7 +591,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-03.jpg",
       "title": "Global Ensemble 3",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-03.jpg",
       "uploadDate": "2025-08-14 02:48:03"
     },
@@ -600,7 +600,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-04.jpg",
       "title": "Global Ensemble 4",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-04.jpg",
       "uploadDate": "2025-08-14 02:48:03"
     },
@@ -609,7 +609,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-05.jpg",
       "title": "Global Ensemble 5",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-05.jpg",
       "uploadDate": "2025-08-14 02:48:04"
     },
@@ -618,7 +618,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-06.jpg",
       "title": "Global Ensemble 6",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-06.jpg",
       "uploadDate": "2025-08-14 02:48:04"
     },
@@ -627,7 +627,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-07.jpg",
       "title": "Global Ensemble 7",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-07.jpg",
       "uploadDate": "2025-08-14 02:48:05"
     },
@@ -636,7 +636,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-08.jpg",
       "title": "Global Ensemble 8",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-08.jpg",
       "uploadDate": "2025-08-14 02:48:05"
     },
@@ -645,7 +645,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-09.jpg",
       "title": "Global Ensemble 9",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-09.jpg",
       "uploadDate": "2025-08-14 02:48:06"
     },
@@ -654,7 +654,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-10.jpg",
       "title": "Global Ensemble 10",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-10.jpg",
       "uploadDate": "2025-08-14 02:48:07"
     },
@@ -663,7 +663,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-11.jpg",
       "title": "Global Ensemble 11",
       "description": "Global Ensemble related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-11.jpg",
       "uploadDate": "2025-08-14 02:48:07"
     },
@@ -672,7 +672,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-video-01.mp4",
       "title": "Global Ensemble 12",
       "description": "Global Ensemble related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-video-01.mp4",
       "uploadDate": "2025-08-14 02:48:08"
     },
@@ -681,7 +681,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "global-ensemble/global-ensemble-video-02.mp4",
       "title": "Global Ensemble 13",
       "description": "Global Ensemble related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/global-ensemble/global-ensemble-video-02.mp4",
       "uploadDate": "2025-08-14 02:48:10"
     }
@@ -692,7 +692,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_01.jpg",
       "title": "Hyanggyo Program 1",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_01.jpg",
       "uploadDate": "2025-08-14 02:48:12"
     },
@@ -701,7 +701,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_02.jpg",
       "title": "Hyanggyo Program 2",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_02.jpg",
       "uploadDate": "2025-08-14 02:48:12"
     },
@@ -710,7 +710,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_03.jpg",
       "title": "Hyanggyo Program 3",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_03.jpg",
       "uploadDate": "2025-08-14 02:48:13"
     },
@@ -719,7 +719,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_04.jpg",
       "title": "Hyanggyo Program 4",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_04.jpg",
       "uploadDate": "2025-08-14 02:48:13"
     },
@@ -728,7 +728,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_05.jpg",
       "title": "Hyanggyo Program 5",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_05.jpg",
       "uploadDate": "2025-08-14 02:48:14"
     },
@@ -737,7 +737,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_06.jpg",
       "title": "Hyanggyo Program 6",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_06.jpg",
       "uploadDate": "2025-08-14 02:48:14"
     },
@@ -746,7 +746,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_07.jpg",
       "title": "Hyanggyo Program 7",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_07.jpg",
       "uploadDate": "2025-08-14 02:48:15"
     },
@@ -755,7 +755,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_08.jpg",
       "title": "Hyanggyo Program 8",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_08.jpg",
       "uploadDate": "2025-08-14 02:48:16"
     },
@@ -764,7 +764,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_09.jpg",
       "title": "Hyanggyo Program 9",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_09.jpg",
       "uploadDate": "2025-08-14 02:48:16"
     },
@@ -773,7 +773,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_10.jpg",
       "title": "Hyanggyo Program 10",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_10.jpg",
       "uploadDate": "2025-08-14 02:48:16"
     },
@@ -782,7 +782,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_11.jpg",
       "title": "Hyanggyo Program 11",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_11.jpg",
       "uploadDate": "2025-08-14 02:48:17"
     },
@@ -791,7 +791,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_12.jpg",
       "title": "Hyanggyo Program 12",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_12.jpg",
       "uploadDate": "2025-08-14 02:48:17"
     },
@@ -800,7 +800,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "hyanggyo/KakaoTalk_20250716_154132103_13.jpg",
       "title": "Hyanggyo Program 13",
       "description": "Hyanggyo Program related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/hyanggyo/KakaoTalk_20250716_154132103_13.jpg",
       "uploadDate": "2025-08-14 02:48:18"
     }
@@ -811,7 +811,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/KakaoTalk_20250716_153218135.jpg",
       "title": "Jeju Galot 1",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/KakaoTalk_20250716_153218135.jpg",
       "uploadDate": "2025-08-14 02:48:27"
     },
@@ -820,7 +820,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/KakaoTalk_20250716_153218135_01.jpg",
       "title": "Jeju Galot 2",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/KakaoTalk_20250716_153218135_01.jpg",
       "uploadDate": "2025-08-14 02:48:29"
     },
@@ -829,7 +829,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/KakaoTalk_20250716_153218135_02.jpg",
       "title": "Jeju Galot 3",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/KakaoTalk_20250716_153218135_02.jpg",
       "uploadDate": "2025-08-14 02:48:30"
     },
@@ -838,7 +838,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/KakaoTalk_20250716_153218135_03.jpg",
       "title": "Jeju Galot 4",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/KakaoTalk_20250716_153218135_03.jpg",
       "uploadDate": "2025-08-14 02:48:31"
     },
@@ -847,7 +847,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/KakaoTalk_20250716_153218135_04.jpg",
       "title": "Jeju Galot 5",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/KakaoTalk_20250716_153218135_04.jpg",
       "uploadDate": "2025-08-14 02:48:31"
     },
@@ -856,7 +856,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/KakaoTalk_20250716_153218135_05.jpg",
       "title": "Jeju Galot 6",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/KakaoTalk_20250716_153218135_05.jpg",
       "uploadDate": "2025-08-14 02:48:31"
     },
@@ -865,7 +865,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-01.jpg",
       "title": "Jeju Galot 7",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-01.jpg",
       "uploadDate": "2025-08-14 02:48:18"
     },
@@ -874,7 +874,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-02.jpg",
       "title": "Jeju Galot 8",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-02.jpg",
       "uploadDate": "2025-08-14 02:48:19"
     },
@@ -883,7 +883,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-03.jpg",
       "title": "Jeju Galot 9",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-03.jpg",
       "uploadDate": "2025-08-14 02:48:20"
     },
@@ -892,7 +892,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-04.jpg",
       "title": "Jeju Galot 10",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-04.jpg",
       "uploadDate": "2025-08-14 02:48:20"
     },
@@ -901,7 +901,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-05.jpg",
       "title": "Jeju Galot 11",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-05.jpg",
       "uploadDate": "2025-08-14 02:48:21"
     },
@@ -910,7 +910,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-06.jpg",
       "title": "Jeju Galot 12",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-06.jpg",
       "uploadDate": "2025-08-14 02:48:21"
     },
@@ -919,7 +919,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-07.jpg",
       "title": "Jeju Galot 13",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-07.jpg",
       "uploadDate": "2025-08-14 02:48:22"
     },
@@ -928,7 +928,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-08.jpg",
       "title": "Jeju Galot 14",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-08.jpg",
       "uploadDate": "2025-08-14 02:48:23"
     },
@@ -937,7 +937,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-09.jpg",
       "title": "Jeju Galot 15",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-09.jpg",
       "uploadDate": "2025-08-14 02:48:23"
     },
@@ -946,7 +946,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-10.jpg",
       "title": "Jeju Galot 16",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-10.jpg",
       "uploadDate": "2025-08-14 02:48:24"
     },
@@ -955,7 +955,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-11.jpg",
       "title": "Jeju Galot 17",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-11.jpg",
       "uploadDate": "2025-08-14 02:48:25"
     },
@@ -964,7 +964,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-12.jpg",
       "title": "Jeju Galot 18",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-12.jpg",
       "uploadDate": "2025-08-14 02:48:25"
     },
@@ -973,7 +973,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-13.jpg",
       "title": "Jeju Galot 19",
       "description": "Jeju Galot Experience related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-13.jpg",
       "uploadDate": "2025-08-14 02:48:26"
     },
@@ -982,7 +982,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "jeju-galot/jeju-galot-activity-video.mp4",
       "title": "Jeju Galot 20",
       "description": "Jeju Galot Experience related video",
-      "type": "video",
+      "media_type": "video",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/jeju-galot/jeju-galot-activity-video.mp4",
       "uploadDate": "2025-08-14 02:48:27"
     }
@@ -993,7 +993,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "leadership/leadership-training-01.jpg",
       "title": "Leadership Training 1",
       "description": "Leadership Training related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/leadership/leadership-training-01.jpg",
       "uploadDate": "2025-08-14 02:48:32"
     },
@@ -1002,7 +1002,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "leadership/leadership-training-02.jpg",
       "title": "Leadership Training 2",
       "description": "Leadership Training related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/leadership/leadership-training-02.jpg",
       "uploadDate": "2025-08-14 02:48:33"
     }
@@ -1013,7 +1013,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "news/KakaoTalk_20250716_155733226.jpg",
       "title": "Ice Hockey Media Coverage 1",
       "description": "Media Coverage related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/news/KakaoTalk_20250716_155733226.jpg",
       "uploadDate": "2025-08-14 02:48:41"
     },
@@ -1022,7 +1022,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "news/KakaoTalk_20250716_155733226_01.jpg",
       "title": "Ice Hockey Media Coverage 2",
       "description": "Media Coverage related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/news/KakaoTalk_20250716_155733226_01.jpg",
       "uploadDate": "2025-08-14 02:48:42"
     },
@@ -1031,7 +1031,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "news/KakaoTalk_20250716_155733226_02.jpg",
       "title": "Ice Hockey Media Coverage 3",
       "description": "Media Coverage related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/news/KakaoTalk_20250716_155733226_02.jpg",
       "uploadDate": "2025-08-14 02:48:43"
     },
@@ -1040,7 +1040,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "news/KakaoTalk_20250716_155826145.jpg",
       "title": "Volunteer Work Media Coverage 4",
       "description": "Media Coverage related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/news/KakaoTalk_20250716_155826145.jpg",
       "uploadDate": "2025-08-14 02:48:43"
     },
@@ -1049,7 +1049,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "news/KakaoTalk_20250716_155826145_01.jpg",
       "title": "Volunteer Work Media Coverage 5",
       "description": "Media Coverage related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/news/KakaoTalk_20250716_155826145_01.jpg",
       "uploadDate": "2025-08-14 02:48:44"
     },
@@ -1058,7 +1058,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "news/KakaoTalk_20250716_155826145_02.jpg",
       "title": "Volunteer Work Media Coverage 6",
       "description": "Media Coverage related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/news/KakaoTalk_20250716_155826145_02.jpg",
       "uploadDate": "2025-08-14 02:48:44"
     },
@@ -1067,7 +1067,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "news/KakaoTalk_20250716_155826145_03.jpg",
       "title": "Volunteer Work Media Coverage 7",
       "description": "Media Coverage related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/news/KakaoTalk_20250716_155826145_03.jpg",
       "uploadDate": "2025-08-14 02:48:45"
     }
@@ -1078,7 +1078,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (1).jpg",
       "title": "RCY Activities 1",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(1).jpg",
       "uploadDate": "2025-08-14 02:48:45"
     },
@@ -1087,7 +1087,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (1).webp",
       "title": "RCY Activities 2",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(1).webp",
       "uploadDate": "2025-08-14 02:48:46"
     },
@@ -1096,7 +1096,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (10).jpg",
       "title": "RCY Activities 3",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(10).jpg",
       "uploadDate": "2025-08-14 02:48:46"
     },
@@ -1105,7 +1105,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (11).jpg",
       "title": "RCY Activities 4",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(11).jpg",
       "uploadDate": "2025-08-14 02:48:46"
     },
@@ -1114,7 +1114,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (12).jpg",
       "title": "RCY Activities 5",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(12).jpg",
       "uploadDate": "2025-08-14 02:48:47"
     },
@@ -1123,7 +1123,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (13).jpg",
       "title": "RCY Activities 6",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(13).jpg",
       "uploadDate": "2025-08-14 02:48:48"
     },
@@ -1132,7 +1132,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (14).jpg",
       "title": "RCY Activities 7",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(14).jpg",
       "uploadDate": "2025-08-14 02:48:48"
     },
@@ -1141,7 +1141,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (15).jpg",
       "title": "RCY Activities 8",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(15).jpg",
       "uploadDate": "2025-08-14 02:48:49"
     },
@@ -1150,7 +1150,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (16).jpg",
       "title": "RCY Activities 9",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(16).jpg",
       "uploadDate": "2025-08-14 02:48:50"
     },
@@ -1159,7 +1159,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (17).jpg",
       "title": "RCY Activities 10",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(17).jpg",
       "uploadDate": "2025-08-14 02:48:50"
     },
@@ -1168,7 +1168,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (18).jpg",
       "title": "RCY Activities 11",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(18).jpg",
       "uploadDate": "2025-08-14 02:48:51"
     },
@@ -1177,7 +1177,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (19).jpg",
       "title": "RCY Activities 12",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(19).jpg",
       "uploadDate": "2025-08-14 02:48:52"
     },
@@ -1186,7 +1186,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (2).jpg",
       "title": "RCY Activities 13",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(2).jpg",
       "uploadDate": "2025-08-14 02:48:52"
     },
@@ -1195,7 +1195,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (2).webp",
       "title": "RCY Activities 14",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(2).webp",
       "uploadDate": "2025-08-14 02:48:53"
     },
@@ -1204,7 +1204,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (20).jpg",
       "title": "RCY Activities 15",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(20).jpg",
       "uploadDate": "2025-08-14 02:48:53"
     },
@@ -1213,7 +1213,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (21).jpg",
       "title": "RCY Activities 16",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(21).jpg",
       "uploadDate": "2025-08-14 02:48:54"
     },
@@ -1222,7 +1222,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (22).jpg",
       "title": "RCY Activities 17",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(22).jpg",
       "uploadDate": "2025-08-14 02:48:54"
     },
@@ -1231,7 +1231,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (23).jpg",
       "title": "RCY Activities 18",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(23).jpg",
       "uploadDate": "2025-08-14 02:48:55"
     },
@@ -1240,7 +1240,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (24).jpg",
       "title": "RCY Activities 19",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(24).jpg",
       "uploadDate": "2025-08-14 02:48:56"
     },
@@ -1249,7 +1249,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (25).jpg",
       "title": "RCY Activities 20",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(25).jpg",
       "uploadDate": "2025-08-14 02:48:56"
     },
@@ -1258,7 +1258,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (26).jpg",
       "title": "RCY Activities 21",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(26).jpg",
       "uploadDate": "2025-08-14 02:48:57"
     },
@@ -1267,7 +1267,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (27).jpg",
       "title": "RCY Activities 22",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(27).jpg",
       "uploadDate": "2025-08-14 02:48:58"
     },
@@ -1276,7 +1276,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (28).jpg",
       "title": "RCY Activities 23",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(28).jpg",
       "uploadDate": "2025-08-14 02:48:58"
     },
@@ -1285,7 +1285,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (3).jpg",
       "title": "RCY Activities 24",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(3).jpg",
       "uploadDate": "2025-08-14 02:48:59"
     },
@@ -1294,7 +1294,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (3).webp",
       "title": "RCY Activities 25",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(3).webp",
       "uploadDate": "2025-08-14 02:48:59"
     },
@@ -1303,7 +1303,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (4).jpg",
       "title": "RCY Activities 26",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(4).jpg",
       "uploadDate": "2025-08-14 02:49:00"
     },
@@ -1312,7 +1312,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (4).webp",
       "title": "RCY Activities 27",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(4).webp",
       "uploadDate": "2025-08-14 02:49:01"
     },
@@ -1321,7 +1321,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (5).jpg",
       "title": "RCY Activities 28",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(5).jpg",
       "uploadDate": "2025-08-14 02:49:01"
     },
@@ -1330,7 +1330,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (6).jpg",
       "title": "RCY Activities 29",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(6).jpg",
       "uploadDate": "2025-08-14 02:49:02"
     },
@@ -1339,7 +1339,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (7).jpg",
       "title": "RCY Activities 30",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(7).jpg",
       "uploadDate": "2025-08-14 02:49:02"
     },
@@ -1348,7 +1348,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (8).jpg",
       "title": "RCY Activities 31",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(8).jpg",
       "uploadDate": "2025-08-14 02:49:03"
     },
@@ -1357,7 +1357,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "rcy/img (9).jpg",
       "title": "RCY Activities 32",
       "description": "RCY Activities related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/rcy/img%20(9).jpg",
       "uploadDate": "2025-08-14 02:49:03"
     }
@@ -1368,7 +1368,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (1).jpg",
       "title": "Refugee Support 1",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(1).jpg",
       "uploadDate": "2025-08-14 02:49:04"
     },
@@ -1377,7 +1377,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (10).jpg",
       "title": "Refugee Support 2",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(10).jpg",
       "uploadDate": "2025-08-14 02:49:04"
     },
@@ -1386,7 +1386,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (11).jpg",
       "title": "Refugee Support 3",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(11).jpg",
       "uploadDate": "2025-08-14 02:49:05"
     },
@@ -1395,7 +1395,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (12).jpg",
       "title": "Refugee Support 4",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(12).jpg",
       "uploadDate": "2025-08-14 02:49:06"
     },
@@ -1404,7 +1404,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (13).jpg",
       "title": "Refugee Support 5",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(13).jpg",
       "uploadDate": "2025-08-14 02:49:07"
     },
@@ -1413,7 +1413,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (14).jpg",
       "title": "Refugee Support 6",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(14).jpg",
       "uploadDate": "2025-08-14 02:49:08"
     },
@@ -1422,7 +1422,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (15).jpg",
       "title": "Refugee Support 7",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(15).jpg",
       "uploadDate": "2025-08-14 02:49:09"
     },
@@ -1431,7 +1431,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (16).jpg",
       "title": "Refugee Support 8",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(16).jpg",
       "uploadDate": "2025-08-14 02:49:10"
     },
@@ -1440,7 +1440,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (17).jpg",
       "title": "Refugee Support 9",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(17).jpg",
       "uploadDate": "2025-08-14 02:49:11"
     },
@@ -1449,7 +1449,7 @@ window.STATIC_MEDIA_DATA = {
       "filename": "refugee/img (18).jpg",
       "title": "Refugee Support 10",
       "description": "Refugee Support related image",
-      "type": "image",
+      "media_type": "image",
       "url": "https://voxkkotekbzrxpqcvdik.supabase.co/storage/v1/object/public/portfolio-assets/refugee/img%20(18).jpg",
       "uploadDate": "2025-08-14 02:49:12"
     }

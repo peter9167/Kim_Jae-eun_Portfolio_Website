@@ -599,6 +599,19 @@ class PortfolioApp {
         // Only refresh if not currently in admin mode
         if (!window.location.pathname.includes('admin')) {
             try {
+                // Use static media data for Vercel deployment
+                if (typeof window.staticMediaData !== 'undefined') {
+                    // Simple refresh - reload dynamic media
+                    this.clearDynamicMedia();
+                    
+                    // Add media to each section from static data
+                    Object.keys(window.staticMediaData).forEach(section => {
+                        this.addDynamicMediaToSection(section, window.staticMediaData[section]);
+                    });
+                    return;
+                }
+
+                // Fallback to API for local development
                 const response = await fetch('/api/media-v2');
                 const data = await response.json();
                 
