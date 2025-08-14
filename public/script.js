@@ -11,7 +11,12 @@ class PortfolioApp {
         this.initializeTabSystem();
         this.initializeAnimations();
         this.initializeLightbox();
-        this.loadDynamicMedia();
+        
+        // Delay loadDynamicMedia to ensure static-media-data.js is fully loaded
+        setTimeout(() => {
+            this.loadDynamicMedia();
+        }, 100);
+        
         this.setupAdminEventListeners();
     }
 
@@ -443,15 +448,20 @@ class PortfolioApp {
     // ==================== DYNAMIC MEDIA LOADING ==================== //
     
     async loadDynamicMedia() {
-        // FIRST: Try to load static data (more reliable for Vercel)
-        console.log('🔄 Checking for static media data first...');
-        console.log('window.STATIC_MEDIA_DATA exists:', !!window.STATIC_MEDIA_DATA);
+        // Wait a bit for static-media-data.js to load
+        let retryCount = 0;
+        const maxRetries = 5;
         
-        if (window.STATIC_MEDIA_DATA) {
-            try {
-                console.log('📊 Found static media data, loading...');
-                console.log('Static data keys:', Object.keys(window.STATIC_MEDIA_DATA));
-                const mediaData = window.STATIC_MEDIA_DATA;
+        while (retryCount < maxRetries) {
+            // FIRST: Try to load static data (more reliable for Vercel)
+            console.log(`🔄 Checking for static media data (attempt ${retryCount + 1}/${maxRetries})...`);
+            console.log('window.staticMediaData exists:', !!window.staticMediaData);
+            
+            if (window.staticMediaData) {
+                try {
+                    console.log('📊 Found static media data, loading...');
+                    console.log('Static data keys:', Object.keys(window.staticMediaData));
+                    const mediaData = window.staticMediaData;
                 
                 // Add media to each section
                 Object.keys(mediaData).forEach(section => {
@@ -460,11 +470,18 @@ class PortfolioApp {
                     this.addDynamicMediaToSection(section, items);
                 });
                 
-                console.log('✅ Successfully loaded static media for sections:', Object.keys(mediaData));
-                return true;
-            } catch (staticError) {
-                console.error('❌ Error loading static media data:', staticError);
-                // Continue to API fallback
+                    console.log('✅ Successfully loaded static media for sections:', Object.keys(mediaData));
+                    return true;
+                } catch (staticError) {
+                    console.error('❌ Error loading static media data:', staticError);
+                    break; // Exit retry loop on error
+                }
+            }
+
+            retryCount++;
+            if (retryCount < maxRetries) {
+                console.log(`⏳ Static data not found, waiting 200ms before retry...`);
+                await new Promise(resolve => setTimeout(resolve, 200));
             }
         }
 
