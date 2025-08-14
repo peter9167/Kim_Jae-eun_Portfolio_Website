@@ -1,0 +1,43 @@
+# Node modules (biggest space saver)
+node_modules/
+
+# Development files
+.env*
+*.log
+
+# Database files  
+data/
+*.db
+*.sqlite*
+
+# Large asset directories (biggest files)
+public/assets/
+uploads/
+
+# Documentation
+README.md
+.DS_Store
+
+# Scripts directory
+scripts/
+
+# Backup files
+index_backup.html
+*backup*
+
+# Development tools
+.claude/
+.git/
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Test files
+*test*
+*Test*
+
+# Admin files already in public/
+admin.html
+admin-script.js
+admin-styles.css
