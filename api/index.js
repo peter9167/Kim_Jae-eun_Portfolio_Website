@@ -42,73 +42,30 @@ app.get('/api/health', (req, res) => {
     });
 });
 
+// Static files routes
+app.get('/admin-script.js', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'admin-script.js'));
+});
+
+app.get('/admin-styles.css', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'admin-styles.css'));
+});
+
+app.get('/script.js', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'script.js'));
+});
+
+app.get('/styles.css', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'styles.css'));
+});
+
 // Admin page route
 app.get('/admin', (req, res) => {
     try {
         const adminHtmlPath = path.join(__dirname, '..', 'public', 'admin.html');
-        
-        // Check if file exists
-        if (fs.existsSync(adminHtmlPath)) {
-            res.sendFile(adminHtmlPath);
-        } else {
-            // Send inline admin page if file doesn't exist
-            res.send(`
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Admin</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 50px; }
-        .login-form { max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; }
-        input { width: 100%; padding: 10px; margin: 10px 0; }
-        button { width: 100%; padding: 10px; background: #007cba; color: white; border: none; }
-    </style>
-</head>
-<body>
-    <div class="login-form">
-        <h1>Portfolio Admin</h1>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="아이디" required>
-            <input type="password" id="password" placeholder="비밀번호" required>
-            <button type="submit">로그인</button>
-        </form>
-        <div id="message"></div>
-    </div>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            
-            try {
-                const response = await fetch('/api/auth/login', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ username, password })
-                });
-                
-                const result = await response.json();
-                
-                if (result.success) {
-                    document.getElementById('message').innerHTML = 
-                        '<p style="color: green;">로그인 성공! 관리자 기능은 현재 개발 중입니다.</p>';
-                } else {
-                    document.getElementById('message').innerHTML = 
-                        '<p style="color: red;">로그인 실패: ' + result.message + '</p>';
-                }
-            } catch (error) {
-                document.getElementById('message').innerHTML = 
-                    '<p style="color: red;">에러가 발생했습니다.</p>';
-            }
-        });
-    </script>
-</body>
-</html>
-            `);
-        }
+        res.sendFile(adminHtmlPath);
     } catch (error) {
+        console.error('Admin page error:', error);
         res.status(500).send('Admin page error');
     }
 });

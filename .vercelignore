@@ -37,7 +37,4 @@ yarn.lock
 *test*
 *Test*
 
-# Admin files already in public/
-admin.html
-admin-script.js
-admin-styles.css
+# Admin files are needed for /admin route
